@@ -5635,5 +5635,36 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+@font-face {
+  font-family: HoboWeb;
+  src: url("../../fonts/HoboStd.otf") format("opentype"); }
+body {
+  font-family: "HoboWeb"; }
+
+.logo-container {
+  text-align: center;
+  margin-bottom: -40px; }
+
+.coming-soon {
+  text-align: center;
+  margin-bottom: 15px; }
+  .coming-soon h1 {
+    font-size: 3.5em; }
+
+.coming-soon a {
+  color: #1b75bc;
+  font-size: 22px; }
+  .coming-soon a :hover {
+    color: #15598f; }
+
+.address {
+  font-size: 25px; }
+
+.kids {
+  margin-bottom: -20px;
+  text-align: center; }
+
+.scripture {
+  font-size: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
