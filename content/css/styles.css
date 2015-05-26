@@ -5643,19 +5643,43 @@ body {
 
 .logo-container {
   text-align: center;
-  margin-bottom: -40px; }
+  margin-bottom: 10px; }
+  .logo-container img {
+    width: 75%; }
+
+.logo-container.mobile {
+  border-bottom-color: #e31f26;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  margin: 0; }
+  .logo-container.mobile img {
+    margin-bottom: -10px; }
+  .logo-container.mobile h1 {
+    font-size: 105px;
+    margin: 0;
+    color: #1b75bc; }
+  .logo-container.mobile h2 {
+    color: #1b75bc;
+    margin: 0;
+    font-size: 75px; }
 
 .coming-soon {
   text-align: center;
   margin-bottom: 15px; }
   .coming-soon h1 {
     font-size: 3.5em; }
+  .coming-soon a {
+    color: #1b75bc;
+    font-size: 22px; }
+    .coming-soon a :hover {
+      color: #15598f; }
 
-.coming-soon a {
-  color: #1b75bc;
-  font-size: 22px; }
-  .coming-soon a :hover {
-    color: #15598f; }
+.coming-soon.mobile h1 {
+  font-size: 70px; }
+.coming-soon.mobile p {
+  font-size: 50px; }
+.coming-soon.mobile a {
+  font-size: 50px; }
 
 .address {
   font-size: 25px; }
@@ -5666,5 +5690,8 @@ body {
 
 .scripture {
   font-size: 20px; }
+
+.mobile p.scripture {
+  font-size: 33px; }
 
 /*# sourceMappingURL=styles.css.map */

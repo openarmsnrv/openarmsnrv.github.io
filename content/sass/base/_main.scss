@@ -9,7 +9,30 @@ body {
 
 .logo-container {
 	text-align: center;
-	margin-bottom: -40px;
+	margin-bottom: 10px;
+	img {
+		width: 75%;
+	}
+}
+
+.logo-container.mobile {
+  	border-bottom-color: $red;
+	border-bottom-style: solid;
+  	border-bottom-width: 5px;
+	margin: 0;
+	img {
+		margin-bottom: -10px;
+	}
+	h1 {
+		font-size: 105px;
+		margin: 0;
+		color: $blue;
+	}
+	h2 {
+		color: $blue;
+		margin: 0;
+		font-size: 75px
+	}
 }
 
 .coming-soon {
@@ -18,13 +41,24 @@ body {
 	h1 {
 		font-size: 3.5em;
 	}
+	a {
+		color: $blue;
+		font-size: 22px;
+		:hover {
+			color: darken($blue, 10%);
+		}
+	}
 }
 
-.coming-soon a {
-	color: $blue;
-	font-size: 22px;
-	:hover {
-		color: darken($blue, 10%);
+.coming-soon.mobile {
+	h1 {
+		font-size: 70px;
+	}
+	p {
+		font-size: 50px;
+	}
+	a {
+		font-size: 50px;
 	}
 }
 
@@ -39,4 +73,8 @@ body {
 
 .scripture {
 	font-size: 20px;
+}
+
+.mobile p.scripture {
+	font-size: 33px;
 }
