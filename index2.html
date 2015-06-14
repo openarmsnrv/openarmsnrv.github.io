@@ -48,11 +48,6 @@
 			      <img src="images/cinelli-front.jpeg" width="1024" height="683" alt="Cinelli">
 			      <img src="images/affinity.jpeg" width="1024" height="685" alt="Affinity">
 			    </div>
-
-			    <nav class="slides-navigation">
-			      <a href="#" class="next">Next</a>
-			      <a href="#" class="prev">Previous</a>
-			    </nav>
 			  </div>
 		</section>
 
@@ -68,17 +63,9 @@
 		<script>
 			$(function() {
 				$('#slides').superslides({
-					hashchange: true,
-					play: 4000
-				});
-
-				$('#slides').on('mouseenter', function() {
-					$(this).superslides('stop');
-					console.log('Stopped')
-				});
-				$('#slides').on('mouseleave', function() {
-					$(this).superslides('start');
-					console.log('Started')
+					animation: 'fade',
+					play: 5000,
+					pagination: false
 				});
 			});
 		</script>
