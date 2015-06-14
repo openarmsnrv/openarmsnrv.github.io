@@ -83,3 +83,26 @@ body {
 .mobile p.scripture {
 	font-size: 33px;
 }
+
+// ----------
+
+.greeting {
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	text-align: center;
+	top: 33%;
+	width: 100%;
+	left: 0;
+	z-index: 10;
+	-webkit-transform: translateY(-33%);
+	-moz-transform: translateY(-33%);
+	-ms-transform: translateY(-33%);
+	-o-transform: translateY(-33%);
+	transform: translateY(-33%);
+}
+
+.greeting h1 {
+	font-size: 59px;
+}
