@@ -15,14 +15,14 @@
 }
 
 .nav > li > a {
-  font-family: "LiberationSans";
+  font-family: "MagLetters";
   font-size: 17px;
 	font-weight: bold;
   line-height: 90px;
 }
 
 .dropdown-menu>li>a {
-  font-family: "LiberationSans";
+  font-family: "MagLetters";
 }
 
 .navbar-default {
@@ -46,6 +46,19 @@
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border: none;
 }
+
+// .navbar-default {
+// 	.navbar-nav {
+//     > li:nth-child(2) {
+// 			> a {
+// 				&:hover,
+// 				&:focus {
+// 					color: red;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
 @media (max-width: 767px) {
 

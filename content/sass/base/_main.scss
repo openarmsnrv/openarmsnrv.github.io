@@ -1,11 +1,16 @@
 @font-face {
-font-family: HoboWeb;
-src: url("../../fonts/HoboStd.otf") format("opentype");
+	font-family: HoboWeb;
+	src: url("../../fonts/HoboStd.otf") format("opentype");
 }
 
 @font-face {
-font-family: LiberationSans;
-src: url("../../fonts/LiberationSans-Regular.ttf") format("opentype");
+	font-family: LiberationSans;
+	src: url("../../fonts/LiberationSans-Regular.ttf") format("opentype");
+}
+
+@font-face {
+	font-family: MagLetters;
+	src: url("../../fonts/2086.ttf") format("opentype");
 }
 
 body {
@@ -21,9 +26,9 @@ body {
 }
 
 .logo-container.mobile {
-  	border-bottom-color: $red;
+  border-bottom-color: $red;
 	border-bottom-style: solid;
-  	border-bottom-width: 5px;
+  border-bottom-width: 5px;
 	margin: 0;
 	img {
 		margin-bottom: -10px;
@@ -89,6 +94,7 @@ body {
 .greeting {
 	color: #fff;
 	display: block;
+	font-family: "MagLetters";
 	margin: 0 auto;
 	position: absolute;
 	text-align: center;
