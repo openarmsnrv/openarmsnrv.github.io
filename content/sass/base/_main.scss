@@ -14,7 +14,7 @@
 }
 
 body {
-	font-family: "HoboWeb";
+	font-family: 'Droid Sans', sans-serif;
 }
 
 .logo-container {
@@ -111,4 +111,72 @@ body {
 
 .greeting h1 {
 	font-size: 59px;
+}
+
+.welcome-bottom {
+	bottom: 25px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 200;
+}
+
+.fact-container {
+	padding-top: 60px;
+	text-align: center;
+	position: relative;
+}
+
+.fact-icon {
+	background: #fff;
+  color: #fff;
+  height: 120px;
+  left: 50%;
+  margin-left: -60px;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  width: 120px;
+  z-index: 1;
+}
+
+.fact-box {
+	color: #fff;
+	padding: 60px 15px 15px;
+}
+
+.fact-box {
+	&.faith {
+		background-color: $green;
+	}
+	&.love {
+		background-color: $orange;
+	}
+	&.travel {
+		background-color: $blue;
+	}
+}
+
+.fact-arrow {
+	bottom: -15px;
+  display: block;
+  height: 30px;
+  left: 50%;
+  margin-left: -15px;
+  position: absolute;
+  width: 30px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+	&.faith {
+		background-color: $green;
+	}
+	&.love {
+		background-color: $orange;
+	}
+	&.travel {
+		background-color: $blue;
+	}
 }
