@@ -1,3 +1,5 @@
+@import '../base/_variables.scss';
+
 .navbar-brand,
 .navbar-nav > li > a {
 	padding-top: 0;
@@ -21,9 +23,21 @@
   line-height: 90px;
 }
 
-.dropdown-menu>li>a {
+.dropdown-menu>li>a.about {
   font-family: "MagLetters";
+   &:hover,
+   &:focus {
+     color: $blue;
+   } 
 }
+
+.dropdown-menu > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $blue;
+      }
+   }
 
 .navbar-default {
   background-color: #ffffff;
@@ -47,18 +61,75 @@
   border: none;
 }
 
-// .navbar-default {
-// 	.navbar-nav {
-//     > li:nth-child(2) {
-// 			> a {
-// 				&:hover,
-// 				&:focus {
-// 					color: red;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+.navbar-default .navbar-nav {
+     > li > a.about {
+      &:hover,
+      &:focus {
+        color: $blue;
+        background-color: white;
+      }
+    }
+    > .active > a.about {
+      &,
+      &:hover,
+      &:focus {
+        color: $blue;
+        background-color: white;
+      }
+    }
+     > li > a.programs {
+      &:hover,
+      &:focus {
+        color: $green;
+      }
+    }
+    > .active > a.programs {
+      &,
+      &:hover,
+      &:focus {
+        color: $green;
+      }
+    }
+    > li > a.schedule {
+      &:hover,
+      &:focus {
+        color: $red;
+      }
+    }
+    > .active > a.schedule {
+      &,
+      &:hover,
+      &:focus {
+        color: $red;
+      }
+    }
+     > li > a.resources {
+      &:hover,
+      &:focus {
+        color: $yellow;
+      }
+    }
+    > .active > a.resources {
+      &,
+      &:hover,
+      &:focus {
+        color: $yellow;
+      }
+    }
+    > li > a.contact {
+      &:hover,
+      &:focus {
+        color: $orange;
+      }
+    }
+    > .active > a.contact {
+      &,
+      &:hover,
+      &:focus {
+        color: $orange;
+      }
+    }
+}
 
 @media (max-width: 767px) {
 
