@@ -77,13 +77,13 @@
         background-color: white;
       }
     }
-     > li > a.programs {
+     > li > a.classes {
       &:hover,
       &:focus {
         color: $green;
       }
     }
-    > .active > a.programs {
+    > .active > a.classes {
       &,
       &:hover,
       &:focus {

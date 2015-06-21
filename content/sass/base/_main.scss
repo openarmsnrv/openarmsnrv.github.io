@@ -125,31 +125,17 @@ body {
 	z-index: 200;
 }
 
-@media (max-width: 767px) {
+//	.greeting {
+//		margin-top: 180px;
+//	}
 
-	.navbar-nav > li > a {
-		line-height: 15px !important;
-		padding-bottom: 10px !important;
-		padding-top: 10px !important;
-	}
-
-	.welcome-bottom, .greeting {
-		position: relative;
-	}
-
-	.greeting {
-		margin-top: 180px;
-	}
-
-	.greeting h1 {
-		font-size: 36px;
-	}
-
-	.greeting p {
-		font-size: 18px;
-	}
-
-}
+//	.greeting h1 {
+//		font-size: 36px;
+//	}
+//
+//	.greeting p {
+//		font-size: 18px;
+//	}
 
 .fact-container {
 	padding-top: 60px;
@@ -261,5 +247,35 @@ section.mission {
 	font-family: 'HoboWeb';
 	h2 {
 		font-size: 75px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.navbar-nav > li > a {
+		line-height: 15px !important;
+		padding-bottom: 10px !important;
+		padding-top: 10px !important;
+	}
+
+	.facts-container {
+		background-color: $blue;
+	}
+	
+	.fact-container {
+		margin-top: 50px;
+	}
+
+	.welcome-bottom {
+		position: relative;
+	}
+	
+	.verse{
+		> h1 {
+			font-size: 50px;
+		}
+		> h4 {
+			font-size: 24px;
+		}
 	}
 }
