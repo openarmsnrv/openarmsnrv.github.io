@@ -17,18 +17,22 @@
 }
 
 .nav > li > a {
-  font-family: "MagLetters";
+  font-family: "HoboWeb";
   font-size: 17px;
 	font-weight: bold;
   line-height: 90px;
 }
 
+.navbar-nav>li>.dropdown-menu {
+	border-top-width: 0;
+}
+
 .dropdown-menu>li>a.about {
-  font-family: "MagLetters";
+  font-family: "HoboWeb";
    &:hover,
    &:focus {
      color: $blue;
-   } 
+   }
 }
 
 .dropdown-menu > .active > a {
@@ -131,6 +135,18 @@
         color: $orange;
       }
     }
+}
+
+.table.contacts>thead>tr>th, .table.contacts>thead>tr>td, .table.contacts>tbody>tr>th,
+.table.contacts>tbody>tr>td, .table.contacts>tfoot>tr>th, .table.contacts>tfoot>tr>td {
+	border-top: none;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.table.contacts>tbody>tr>td.content {
+	padding-left: 15px;
+	text-align: left;
 }
 
 @media (max-width: 767px) {
