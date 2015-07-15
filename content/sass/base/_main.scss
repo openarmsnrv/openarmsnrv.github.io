@@ -159,6 +159,7 @@ body {
 .fact-box {
 	color: #fff;
 	padding: 60px 15px 15px;
+	opacity: .8;
 	h3 {
 		font-family: "HoboWeb";
 	}
@@ -212,11 +213,11 @@ section#mobileVerse {
 div.verse{
 	text-align: center;
 	> h1 {
-		font-family: 'MagLetters';
+		font-family: 'HoboWeb';
 		font-size: 75px
 	}
 	> h2 {
-		font-family: 'MagLetters';
+		font-family: 'HoboWeb';
 		font-size: 40px;
 		margin-top: 100px;
 	}
@@ -228,7 +229,7 @@ div.verse.mobile > h2{
 
 section.mission {
 	background-color: white;
-	color: $red;
+	color: $blue;
 	margin-top: 50px;
 	min-height: 300px;
 	text-align: center;
@@ -270,6 +271,24 @@ section.contact {
 	}
 }
 
+section.schedule {
+	font-family: "HoboWeb";
+	font-size: 20px;
+	text-align: center;
+	.section-title {
+		color: $red;
+	}
+}
+
+section.resources {
+	font-family: "HoboWeb";
+	font-size: 20px;
+	text-align: center;
+	.section-title {
+		color: $yellow;
+	}
+}
+
 svg.contact {
 	width: 60px;
 }
@@ -294,10 +313,6 @@ section.footer {
 		line-height: 15px !important;
 		padding-bottom: 10px !important;
 		padding-top: 10px !important;
-	}
-
-	.facts-container {
-		background-color: $blue;
 	}
 
 	.fact-container {

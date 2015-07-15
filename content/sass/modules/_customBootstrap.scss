@@ -27,21 +27,36 @@
 	border-top-width: 0;
 }
 
-.dropdown-menu>li>a.about {
+.dropdown-menu>li>a {
   font-family: "HoboWeb";
-   &:hover,
-   &:focus {
-     color: $blue;
-   }
+	.about {
+		&:hover,
+		&:focus {
+			color: $blue;
+		}
+	}
+	.classes {
+		&:hover,
+		&:focus {
+			color: $green;
+		}
+	}
 }
 
 .dropdown-menu > .active > a {
-      &,
-      &:hover,
-      &:focus {
-        background-color: $blue;
-      }
-   }
+  .about {
+		&:hover,
+		&:focus {
+			background-color: $blue;
+		}
+	}
+	.classes {
+		&:hover,
+    &:focus {
+      background-color: $green;
+    }
+	}
+}
 
 .navbar-default {
   background-color: #ffffff;
@@ -85,6 +100,7 @@
       &:hover,
       &:focus {
         color: $green;
+				background-color: white;
       }
     }
     > .active > a.classes {
@@ -92,12 +108,14 @@
       &:hover,
       &:focus {
         color: $green;
+				background-color: white;
       }
     }
     > li > a.schedule {
       &:hover,
       &:focus {
         color: $red;
+				background-color: white;
       }
     }
     > .active > a.schedule {
@@ -105,12 +123,14 @@
       &:hover,
       &:focus {
         color: $red;
+				background-color: white;
       }
     }
      > li > a.resources {
       &:hover,
       &:focus {
         color: $yellow;
+				background-color: white;
       }
     }
     > .active > a.resources {
@@ -118,6 +138,7 @@
       &:hover,
       &:focus {
         color: $yellow;
+				background-color: white;
       }
     }
     > li > a.contact {

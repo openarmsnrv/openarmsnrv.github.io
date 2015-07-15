@@ -1,12 +1,40 @@
 $(document).ready(function() {
-  $('body').scrollspy({target:'.navbar-collapse', offset:10});
-  
+  // $('body').scrollspy({target:'.navbar-collapse', offset:10});
+  $('.navbar-collapse a').each(function(){
+
+		var location = window.location.toString();
+		var url = $(this).attr('href');
+		var hash = url.substring( url.indexOf('#') );
+		var clean_url = url.replace(hash, '');
+
+		if( location === hash )
+      hash = '#top';
+
+		if( location = clean_url )
+      $(this).attr('data-target', hash);
+
+	});
+
+  $('body').scrollspy({
+  		target: '.navbar-collapse',
+  		offset: 100
+  	});
+
+  	$('[data-spy="scroll"]').each(function () {
+  		var $spy = $(this).scrollspy('refresh');
+  	});
+
+  	// Fix scroll position set by browser when page loads first
+  	$(window).one("load", function() {
+  		$('.navbar a[href$="' + window.location.hash + '"]').click();
+  	});
+
   function makeFullscreen() {
       $('section.fullscreen').each(function(){
         var win_height = $(window).height();
         var navbar_height = $('body > .navbar').height();
         var available_height = win_height;
-        $(this).css('min-height', available_height + 'px');
+        $(this).css('height', available_height + 'px');
         console.log(win_height, navbar_height, available_height);
       });
     }
@@ -19,7 +47,7 @@ $(document).ready(function() {
 
     if( $().superslides ) {
       $('.superslides').each(function(){
-        
+
         $('.superslides').superslides({
           play: 5000,
           animation_speed: "slow",
@@ -40,7 +68,7 @@ $(document).ready(function() {
 //			win_height = $(window).height();
 //			navbar_height = $('body > .navbar').height();
 //			available_height = win_height - navbar_height;
-//			$(this).css('min-height', available_height + 'px'); 
+//			$(this).css('min-height', available_height + 'px');
 //		});
 //	}
 //
