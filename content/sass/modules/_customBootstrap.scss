@@ -170,6 +170,22 @@
 	text-align: left;
 }
 
+th {
+	text-align: center;
+}
+
+.table>thead>tr>th, .table>thead>tr>td, .table>tbody>tr>th, .table>tbody>tr>td, .table>tfoot>tr>th, .table>tfoot>tr>td {
+	vertical-align: middle;
+	width: 40px;
+}
+
+.table-hover {
+  > tbody > tr:hover {
+    background-color: $red;
+		color: white;
+  }
+}
+
 @media (max-width: 767px) {
 
 	.navbar-nav > li > a {
