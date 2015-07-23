@@ -201,30 +201,51 @@ body {
 	}
 }
 
-section#verse {
+section.verse {
 	color: white;
 }
 
-section#mobileVerse {
+section.mobile-verse.peace {
 	color: white;
   background-image: url("../../images/peace.jpg");
 }
 
+section.mobile-verse.truth {
+	color: white;
+  background-image: url("../../images/walkInTruth.jpg");
+}
+
 div.verse{
 	text-align: center;
-	> h1 {
-		font-family: 'HoboWeb';
-		font-size: 75px
-	}
+	position: absolute;
+  top: 50%;
+	left: 50%;
+  transform: translate(-50%,-50%);
 	> h2 {
 		font-family: 'HoboWeb';
 		font-size: 40px;
-		margin-top: 100px;
+		margin-top: 50px;
 	}
 }
 
-div.verse.mobile > h2{
+div.verse.peace > h1 {
+	font-family: 'HoboWeb';
+	font-size: 75px;
 	margin-top: 20px;
+}
+
+div.verse.truth > h1 {
+	font-family: 'HoboWeb';
+	font-size: 75px;
+	margin-top: 100px;
+}
+
+div.verse.mobile > h1{
+	margin-top: 10px;
+}
+
+div.verse.mobile > h2{
+	margin-top: 10px;
 }
 
 section.mission {
@@ -258,6 +279,12 @@ section.mission {
 	}
 }
 
+section.classes {
+	.section-title {
+		color: $green;
+	}
+}
+
 section.contact {
 	border-top-width: medium;
 	border-top-color: $orange;
@@ -281,16 +308,32 @@ section.schedule {
 }
 
 section.resources {
+	background-color: $yellow;
 	font-family: "HoboWeb";
 	font-size: 20px;
+	height: 500px;
 	text-align: center;
 	.section-title {
-		color: $yellow;
+		color: white;
 	}
+}
+
+.resources-body {
+	margin-top: 100px;
+}
+
+a.resource {
+	color: white;
+	font-family: 'Droid Sans', sans-serif;
 }
 
 svg.contact {
 	width: 60px;
+}
+
+svg.document {
+	margin-bottom: -30px;
+	width: 150px;
 }
 
 .img-contact {
@@ -352,7 +395,7 @@ section.module.content {
   padding: 40px 0;
 }
 section.module.parallax {
-  height: 400px;
+  height: 600px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -360,6 +403,7 @@ section.module.parallax {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+	position: relative;
 }
 // section.module.parallax h1 {
 //   color: rgba(255, 255, 255, 0.8);
@@ -372,6 +416,10 @@ section.module.parallax {
 // }
 section.module.parallax-1 {
   background-image: url("../../images/peace.jpg");
+}
+
+section.module.parallax-2 {
+  background-image: url("../../images/walkInTruth.jpg");
 }
 
 // @media all and (min-width: 600px) {

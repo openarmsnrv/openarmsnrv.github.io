@@ -43,19 +43,12 @@
 	}
 }
 
-.dropdown-menu > .active > a {
-  .about {
-		&:hover,
-		&:focus {
-			background-color: $blue;
-		}
-	}
-	.classes {
-		&:hover,
-    &:focus {
-      background-color: $green;
-    }
-	}
+.dropdown-menu.about>.active>a, .dropdown-menu.about>.active>a:hover, .dropdown-menu.about>.active>a:focus {
+	background-color: $blue;
+}
+
+.dropdown-menu.classes>.active>a, .dropdown-menu.classes>.active>a:hover, .dropdown-menu.classes>.active>a:focus {
+	background-color: $green;
 }
 
 .navbar-default {
