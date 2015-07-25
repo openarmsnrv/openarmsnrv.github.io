@@ -252,7 +252,7 @@ section.mission {
 	background-color: white;
 	color: $blue;
 	margin-top: 50px;
-	min-height: 300px;
+	min-height: 400px;
 	text-align: center;
 	.section-title h5 {
 		color: #000;
@@ -263,7 +263,7 @@ section.mission {
 }
 
 .mission-statement {
-	font-size: 25px;
+	font-size: 18px;
 	margin-top: 15px;
 	margin-bottom: 30px;
 	text-align: justify;
@@ -334,6 +334,9 @@ svg.contact {
 svg.document {
 	margin-bottom: -30px;
 	width: 150px;
+	&:hover {
+		fill: white;
+	}
 }
 
 .img-contact {
