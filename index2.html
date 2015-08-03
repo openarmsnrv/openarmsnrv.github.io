@@ -198,7 +198,7 @@
 					<h2>Schedule</h2>
 				</div>
 
-				<table class="table table-bordered table-hover">
+				<table class="table table-bordered table-hover hidden-xs">
 					<thead>
 						<tr>
 							<th>Infants</th>
@@ -260,6 +260,161 @@
 							<td>4:30 - 6:00</br>Dismissal</td>
 							<td>4:30 - 6:00</br>Free Play/Dismissal</td>
 							<td>5:00 - 6:00</br>Free Play/Dismissal</td>
+							<td>4:30 - 6:00</br>Free Play/Dismissal</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<select class="visible-xs" onchange="updateSchedule(this);">
+			    <option value="1">Infants</option>
+			    <option value="2">Toddlers</option>
+					<option value="3">Twos</option>
+			    <option value="4">Preschool</option>
+				</select>
+
+				<table id="mobileInfantSchedule" class="visible-xs table table-bordered table-hover mobile-schedule">
+					<thead>
+						<tr>
+							<th>Infants</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Arrival - 9:00</br>Greeting parents and children.</td>
+						</tr>
+						<tr>
+							<td>9:00 - 10:00</br>Floor Time (working on sitting up, reaching for objects, rolling over, singing and playing)</td>
+						</tr>
+						<tr>
+							<td>10:00 - 11:00</br>Nap time (if recommended by parents) Infants who are awake will have time in bouncers and swings.</td>
+						</tr>
+						<tr>
+							<td>11:00 - 12:00</br>Lunch (bottles, baby food, etc.)</td>
+						</tr>
+						<tr>
+							<td>12:00 - 12:30</br>Story time</br>12:30 - 2:30</br>Nap time</td>
+						</tr>
+						<tr>
+							<td>2:30 - 3:00</br>Snack time (bottles, baby food, etc.)</td>
+						</tr>
+						<tr>
+							<td>3:00 - 4:00</br>Play time (bouncer's, swings, musical toys, etc.)</td>
+						</tr>
+						<tr>
+							<td>4:00 - 4:30</br>Diaper changes</td>
+						</tr>
+						<tr>
+							<td>4:30 - 6:00</br>Dismissal</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table id="mobileToddlerSchedule" class="visible-xs table table-bordered table-hover mobile-schedule">
+					<thead>
+						<tr>
+							<th>Toddlers</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Arrival - 8:30</br>Free play (table toys or puzzles)</br>8:30 - 9:00</br>Breakfast time</td>
+						</tr>
+						<tr>
+							<td>9:00</br>Diaper changes</br>9:30 - 10:15</br>Circle time (books, songs, alphabet, colors, numbers, etc.)</td>
+						</tr>
+						<tr>
+							<td>10:15 - 11:00</br>Ouside play / centers (weather permitting)</td>
+						</tr>
+						<tr>
+							<td>11:00 - 12:00</br>Diaper changes and lunch</td>
+						</tr>
+						<tr>
+							<td>12:00 - 2:00</br>Naptime</br>2:00 - 2:30</br>Diaper changes and craft time</td>
+						</tr>
+						<tr>
+							<td>2:30 - 3:15</br>Outside time/centers</td>
+						</tr>
+						<tr>
+							<td>3:15 - 3:45</br>Snack Time</td>
+						</tr>
+						<tr>
+							<td>4:00 - 4:30</br>Diaper changes</td>
+						</tr>
+						<tr>
+							<td>4:30 - 6:00</br>Free Play/Dismissal</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table id="mobileTwosSchedule" class="visible-xs table table-bordered table-hover mobile-schedule">
+					<thead>
+						<tr>
+							<th>Two &amp; Three Year Olds</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Arrival - 8:30</br>Free play (puzzles, books, table toys)</br>8:30 - 9:00</br>Breakfast time</td>
+						</tr>
+						<tr>
+							<td>9:00 - 10:00</br>Diapers changes if needed, free play, and circle time</td>
+						</tr>
+						<tr>
+							<td>10:00 - 10:45</br>Outside play / centers (weather permitting)</br>10:45 - 11:00</br>Diapers/Potty</td>
+						</tr>
+						<tr>
+							<td>11:00 - 12:00</br>Diaper changes and lunch</td>
+						</tr>
+						<tr>
+							<td>12:00 - 2:30</br>Naptime</td>
+						</tr>
+						<tr>
+							<td>2:30 - 3:00</br>Diapers/potty </td>
+						</tr>
+						<tr>
+							<td>3:00 - 3:30</br>Snack Time</br>3:30 - 4:00</br>Outside Play</td>
+						</tr>
+						<tr>
+							<td>4:00 - 5:00</br>Centers</td>
+						</tr>
+						<tr>
+							<td>5:00 - 6:00</br>Free Play/Dismissal</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table id="mobilePreSchoolerSchedule" class="visible-xs table table-bordered table-hover mobile-schedule">
+					<thead>
+						<tr>
+							<th>Four &amp; Five Year Olds</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Arrival - 8:30</br>Free play (puzzles, books, table toys, etc.)</br>8:30 - 9:00</br>Breakfast time</td>
+						</tr>
+						<tr>
+							<td>9:00 - 9:45</br>Language Arts (writing, spelling, colors, etc.)</br>9:45 - 10:00</br>Music</td>
+						</tr>
+						<tr>
+							<td>10:00 - 11:00</br>Outside Play / centers (weather permitting)</td>
+						</tr>
+						<tr>
+							<td>11:00 - 11:30</br>Centers</br>11:30 - 12:00</br>Lunch time</td>
+						</tr>
+						<tr>
+							<td>12:00 - 2:30</br>Naptime</td>
+						</tr>
+						<tr>
+							<td>2:30 - 3:00</br>Snack time</td>
+						</tr>
+						<tr>
+							<td>3:00 - 4:00</br>Outside play</td>
+						</tr>
+						<tr>
+							<td>4:00 - 4:30</br>Centers</td>
+						</tr>
+						<tr>
 							<td>4:30 - 6:00</br>Free Play/Dismissal</td>
 						</tr>
 					</tbody>
