@@ -311,7 +311,7 @@ section.resources {
 	background-color: $yellow;
 	font-family: "HoboWeb";
 	font-size: 20px;
-	height: 500px;
+	padding-bottom: 30px;
 	text-align: center;
 	.section-title {
 		color: white;
@@ -319,7 +319,7 @@ section.resources {
 }
 
 .resources-body {
-	margin-top: 100px;
+	margin-top: 30px;
 }
 
 a.resource {
