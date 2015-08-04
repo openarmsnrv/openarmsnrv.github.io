@@ -27,6 +27,15 @@
 	border-top-width: 0;
 }
 
+.table.mobile-schedule>thead>tr>th,
+.table.mobile-schedule>thead>tr>td,
+.table.mobile-schedule>tbody>tr>th,
+.table.mobile-schedule>tbody>tr>td,
+.table.mobile-schedule>tfoot>tr>th,
+.table.mobile-schedule>tfoot>tr>td {
+	width: 345px;
+}
+
 .dropdown-menu>li>a {
   font-family: "HoboWeb";
 	.about {

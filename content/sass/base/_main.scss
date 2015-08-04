@@ -311,6 +311,11 @@ section.schedule {
 	display: none;
 }
 
+#scheduleSelector {
+	width: 75%;
+	margin: 0 auto;
+}
+
 section.resources {
 	background-color: $yellow;
 	font-family: "HoboWeb";

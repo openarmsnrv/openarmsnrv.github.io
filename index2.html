@@ -265,12 +265,14 @@
 					</tbody>
 				</table>
 
-				<select class="visible-xs" onchange="updateSchedule(this);">
-			    <option value="1">Infants</option>
-			    <option value="2">Toddlers</option>
-					<option value="3">Twos</option>
-			    <option value="4">Preschool</option>
-				</select>
+				<div class="selector-container" style="text-align: center;">
+					<select id="scheduleSelector" class="visible-xs form-control" onchange="updateSchedule(this);">
+				    <option value="1">Infants</option>
+				    <option value="2">Toddlers</option>
+						<option value="3">Twos</option>
+				    <option value="4">Preschool</option>
+					</select>
+				</div>
 
 				<table id="mobileInfantSchedule" class="visible-xs table table-bordered table-hover mobile-schedule">
 					<thead>
@@ -309,7 +311,7 @@
 					</tbody>
 				</table>
 
-				<table id="mobileToddlerSchedule" class="visible-xs table table-bordered table-hover mobile-schedule">
+				<table id="mobileToddlerSchedule" class="table table-bordered table-hover mobile-schedule">
 					<thead>
 						<tr>
 							<th>Toddlers</th>
@@ -346,7 +348,7 @@
 					</tbody>
 				</table>
 
-				<table id="mobileTwosSchedule" class="visible-xs table table-bordered table-hover mobile-schedule">
+				<table id="mobileTwosSchedule" class="table table-bordered table-hover mobile-schedule">
 					<thead>
 						<tr>
 							<th>Two &amp; Three Year Olds</th>
@@ -383,7 +385,7 @@
 					</tbody>
 				</table>
 
-				<table id="mobilePreSchoolerSchedule" class="visible-xs table table-bordered table-hover mobile-schedule">
+				<table id="mobilePreSchoolerSchedule" class="table table-bordered table-hover mobile-schedule">
 					<thead>
 						<tr>
 							<th>Four &amp; Five Year Olds</th>

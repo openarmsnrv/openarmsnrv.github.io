@@ -59,20 +59,26 @@ $(document).ready(function() {
       });
     }
 
-    $('#mobileInfantSchedule').show();
-
 });
 
 function updateSchedule(schedule) {
-  $('.mobile-schedule').hide();
+  customHide('.mobile-schedule');
   if (schedule.value == 1)
-    $('#mobileInfantSchedule').show();
+    customShow('#mobileInfantSchedule');
   else if (schedule.value == 2)
-    $('#mobileToddlerSchedule').show();
+    customShow('#mobileToddlerSchedule');
   else if (schedule.value == 3)
-    $('#mobileTwosSchedule').show();
+    customShow('#mobileTwosSchedule');
   else
-    $('#mobilePreSchoolerSchedule').show();
+    customShow('#mobilePreSchoolerSchedule');
+}
+
+function customHide(selector) {
+  $(selector).attr('style', 'display: none !important;');
+}
+
+function customShow(selector) {
+  $(selector).attr('style', 'display: block !important;');
 }
 
 //function makeFullscreen() {
