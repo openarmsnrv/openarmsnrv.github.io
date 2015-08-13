@@ -59,6 +59,8 @@ $(document).ready(function() {
       });
     }
 
+    $("#staff-carousel").owlCarousel({items : 4});
+
 });
 
 function updateSchedule(schedule) {
