@@ -35,7 +35,6 @@ $(document).ready(function() {
         var navbar_height = $('body > .navbar').height();
         var available_height = win_height;
         $(this).css('height', available_height + 'px');
-        console.log(win_height, navbar_height, available_height);
       });
     }
 
@@ -57,11 +56,30 @@ $(document).ready(function() {
           inherit_width_from: "#start"
         });
 
-        console.log('width = ' + $('#start').width(), 'height = ' + $('#start').height());
-
       });
     }
+
 });
+
+function updateSchedule(schedule) {
+  customHide('.mobile-schedule');
+  if (schedule.value == 1)
+    customShow('#mobileInfantSchedule');
+  else if (schedule.value == 2)
+    customShow('#mobileToddlerSchedule');
+  else if (schedule.value == 3)
+    customShow('#mobileTwosSchedule');
+  else
+    customShow('#mobilePreSchoolerSchedule');
+}
+
+function customHide(selector) {
+  $(selector).attr('style', 'display: none !important;');
+}
+
+function customShow(selector) {
+  $(selector).attr('style', 'display: block !important;');
+}
 
 //function makeFullscreen() {
 //		$('section.fullscreen').each(function(){
