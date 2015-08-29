@@ -73,15 +73,22 @@ $(document).ready(function() {
 				]
       });
 
+      $('.schedule-btn').click(function() {
+        $('.schedule-btn').removeClass('selected');
+        var classSchedule = $(this);
+        classSchedule.addClass('selected');
+        updateSchedule(classSchedule.attr('id'));
+      });
+
 });
 
-function updateSchedule(schedule) {
+function updateSchedule(classSchedule) {
   customHide('.mobile-schedule');
-  if (schedule.value == 1)
+  if (classSchedule == 'infantSchedule')
     customShow('#mobileInfantSchedule');
-  else if (schedule.value == 2)
+  else if (classSchedule == 'toddlerSchedule')
     customShow('#mobileToddlerSchedule');
-  else if (schedule.value == 3)
+  else if (classSchedule == 'twosSchedule')
     customShow('#mobileTwosSchedule');
   else
     customShow('#mobilePreSchoolerSchedule');

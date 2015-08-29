@@ -416,13 +416,14 @@
 					</tbody>
 				</table>
 
-				<div class="selector-container" style="text-align: center;">
-					<select id="scheduleSelector" class="visible-xs form-control" onchange="updateSchedule(this);">
-				    <option value="1">Infants</option>
-				    <option value="2">Toddlers</option>
-						<option value="3">Two's</option>
-				    <option value="4">Preschool</option>
-					</select>
+
+				</div>
+
+				<div class="btn-group visible-xs" role="group" aria-label="...">
+					<button id="infantSchedule" type="button" class="btn btn-default schedule-btn selected">Infants</button>
+					<button id="toddlerSchedule" type="button" class="btn btn-default schedule-btn">Toddlers</button>
+					<button id="twosSchedule" type="button" class="btn btn-default schedule-btn">Two's</button>
+					<button id="preschoolSchedule" type="button" class="btn btn-default schedule-btn">Preschool</button>
 				</div>
 
 				<table id="mobileInfantSchedule" class="visible-xs table table-bordered table-hover mobile-schedule">

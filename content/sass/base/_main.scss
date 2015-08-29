@@ -340,7 +340,10 @@ section.testimonial {
 
 .testimonial-content {
 	color: white;
-	margin-top: 20px;
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
 }
 
 .testimonial-parent {
@@ -391,6 +394,17 @@ section.schedule {
 #scheduleSelector {
 	width: 75%;
 	margin: 0 auto;
+}
+
+button.schedule-btn {
+	&:hover {
+		background-color: $red;
+		color: white;
+	}
+	&.selected {
+		background-color: $red;
+		color: white;
+	}
 }
 
 section.resources {
