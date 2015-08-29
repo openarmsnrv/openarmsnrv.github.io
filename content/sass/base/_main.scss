@@ -248,11 +248,12 @@ div.verse.mobile > h2{
 	margin-top: 10px;
 }
 
-section.mission {
-	background-color: white;
-	color: $blue;
-	margin-top: 50px;
+section.mission, section.testimonial {
+	background-color: $blue;
+	color: white;
 	min-height: 400px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	text-align: center;
 	.section-title h5 {
 		color: #000;
@@ -267,6 +268,12 @@ section.mission {
 	margin-top: 15px;
 	margin-bottom: 30px;
 	text-align: justify;
+	> h1 {
+		font-family: 'HoboWeb' !important;
+		text-align: center;
+		border-bottom-width: thin;
+		border-bottom-style: solid;
+	}
 }
 
 .section-title {
@@ -274,12 +281,14 @@ section.mission {
 	margin-bottom: 35px;
 	text-align: center;
 	font-family: 'HoboWeb';
-	h2 {
-		font-size: 75px;
+	h1 {
+		font-size: 36px;
 	}
 }
 
 section.staff {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .staff-member {
@@ -323,7 +332,28 @@ section.staff {
 	}
 }
 
+section.testimonial {
+	.section-title > h1 {
+		color: white;
+	}
+}
+
+.testimonial-content {
+	color: white;
+	margin-top: 20px;
+}
+
+.testimonial-parent {
+	margin-top: 10px;
+}
+
+.testimonial-nav {
+
+}
+
 section.classes {
+	padding-top: 50px;
+	padding-bottom: 50px;
 	.section-title {
 		color: $green;
 	}
@@ -333,7 +363,8 @@ section.contact {
 	border-top-width: medium;
 	border-top-color: $orange;
 	border-top-style: solid;
-
+	padding-top: 50px;
+	padding-bottom: 50px;
 	font-family: "HoboWeb";
 	font-size: 20px;
 	text-align: center;
@@ -346,6 +377,8 @@ section.schedule {
 	font-family: "HoboWeb";
 	font-size: 20px;
 	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	.section-title {
 		color: $red;
 	}
@@ -364,7 +397,8 @@ section.resources {
 	background-color: $yellow;
 	font-family: "HoboWeb";
 	font-size: 20px;
-	padding-bottom: 30px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	text-align: center;
 	.section-title {
 		color: white;
@@ -386,7 +420,7 @@ svg.contact {
 
 svg.document {
 	margin-bottom: -30px;
-	width: 150px;
+	width: 113px;
 	&:hover {
 		fill: white;
 	}
@@ -403,6 +437,8 @@ svg.document {
 
 section.footer {
 	color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	text-align: center;
 }
 
