@@ -48,7 +48,7 @@ $(document).ready(function() {
       $('.superslides').each(function(){
 
         $('.superslides').superslides({
-          play: 5000,
+          play: 7000,
           animation_speed: "slow",
           animation: "fade",
           pagination: false,
