@@ -59,7 +59,7 @@ $(document).ready(function() {
       });
     }
 
-    $("#staff-carousel").owlCarousel({items : 4});
+    $("#staff-carousel").owlCarousel({items : 3});
     $("#testimonial-carousel").owlCarousel(
       {
         singleItem: true,
