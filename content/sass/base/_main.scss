@@ -126,16 +126,26 @@ body {
 }
 
 .verse-container {
-	top: 130px;
 	position: absolute;
 	text-align: center;
+	&.first {
+		top: 65%;
+	}
+	&.second {
+		top: 25%;
+	}
+	&.third {
+		top: 70%;
+		left: 30%;
+	}
 }
 
 .verse-container > p {
 	color: white;
+	font-family: 'HoboWeb';
 	font-size: 30px;
 	text-align: left;
-	width: 50%;
+	width: 40%;
 }
 
 .verse-container > h1 {
@@ -273,6 +283,7 @@ div.verse.mobile > h2{
 
 section.mission, section.testimonial {
 	background-color: $blue;
+	background-repeat: repeat;
 	color: white;
 	font-size: 16px;
 	min-height: 400px;
@@ -528,8 +539,8 @@ svg.document {
 
 section.footer {
 	color: white;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	text-align: center;
 }
 
