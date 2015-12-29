@@ -142,6 +142,23 @@ body {
 	}
 }
 
+.m-verse-container {
+	position: absolute;
+	text-align: center;
+	&.first {
+		top: 52%;
+        left: 10%;
+	}
+	&.second {
+		top: 65%;
+        left: 10%;
+	}
+	&.third {
+		top: 52%;
+		left: 10%;
+	}
+}
+
 .verse-container > p {
     color: white;
     font-size: 36px;
@@ -154,7 +171,7 @@ body {
 
 .m-verse-container > p {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-align: left;
     width: 300px;
@@ -168,6 +185,14 @@ body {
 	font-size: 50px;
 	text-align: left;
 	width: 50%;
+}
+
+.m-verse-container > h1 {
+	color: white;
+	font-family: 'MagLetters';
+	font-size: 50px;
+	text-align: left;
+	width: 100%;
 }
 
 section.verse {
