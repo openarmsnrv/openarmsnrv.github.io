@@ -59,18 +59,14 @@ $(document).ready(function() {
       });
     }
 
-    $("#staff-carousel").owlCarousel({items : 3});
+    $("#staff-carousel").owlCarousel({items : 5});
     $("#testimonial-carousel").owlCarousel(
       {
         singleItem: true,
         autoPlay: true,
         stopOnHover: true,
-        navigation: true,
-        pagination: false,
-        navigationText: [
-					"<i class='glyphicon glyphicon-menu-left testimonial-nav' aria-hidden='true'></i>",
-					"<i class='glyphicon glyphicon-menu-right testimonial-nav' aria-hidden='true'></i>"
-				]
+        navigation: false,
+        pagination: true
       });
 
       $('.schedule-btn').click(function() {

@@ -8,7 +8,7 @@
 
 .navbar {
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  min-height: 90px;
+    min-height: 90px;
 	margin: 0;
 }
 
@@ -17,10 +17,10 @@
 }
 
 .nav > li > a {
-  font-family: "HoboWeb";
-  font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
 	font-weight: bold;
-  line-height: 90px;
+    line-height: 90px;
 }
 
 .navbar-nav>li>.dropdown-menu {

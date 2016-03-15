@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,700italic,400italic,300italic,300,600,600italic,800italic);
+
 @font-face {
 	font-family: HoboWeb;
 	src: url("../../fonts/HoboStd.otf") format("opentype");
@@ -14,7 +16,8 @@
 }
 
 body {
-	font-family: 'Droid Sans', sans-serif;
+	// font-family: 'Droid Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .logo-container {
@@ -95,22 +98,27 @@ body {
 	height: 90px;
 }
 
-.greeting {
-	color: #fff;
-	display: block;
-	font-family: "MagLetters";
-	margin: 0 auto;
-	position: absolute;
-	text-align: center;
-	top: 33%;
-	width: 100%;
-	left: 0;
-	z-index: 10;
-	-webkit-transform: translateY(-33%);
+.main-slogan {
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+    -webkit-transform: translateY(-33%);
 	-moz-transform: translateY(-33%);
 	-ms-transform: translateY(-33%);
 	-o-transform: translateY(-33%);
 	transform: translateY(-33%);
+}
+
+.greeting {
+	line-height: .74;
+    font-weight: 900;
+    font-size: 97px;
 }
 
 .greeting h1 {
@@ -129,7 +137,7 @@ body {
 	position: absolute;
 	text-align: center;
 	&.first {
-		top: 65%;
+		top: 55%;
         left: 100px;
 	}
 	&.second {
@@ -137,7 +145,7 @@ body {
         left: 75px;
 	}
 	&.third {
-		top: 70%;
+		top: 60%;
 		left: 30%;
 	}
 }
@@ -164,8 +172,8 @@ body {
     font-size: 36px;
     font-weight: bold;
     text-align: left;
-    width: 617px;
-    font-family: 'MagLetters';
+    width: 600px;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
 }
 
@@ -175,13 +183,13 @@ body {
     font-weight: bold;
     text-align: left;
     width: 300px;
-    font-family: 'MagLetters';
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
 }
 
 .verse-container > h1 {
 	color: white;
-	font-family: 'MagLetters';
+	font-family: 'Open Sans', sans-serif;
 	font-size: 50px;
 	text-align: left;
 	width: 50%;
@@ -189,7 +197,7 @@ body {
 
 .m-verse-container > h1 {
 	color: white;
-	font-family: 'MagLetters';
+	font-family: 'Open Sans', sans-serif;
 	font-size: 50px;
 	text-align: left;
 	width: 100%;
@@ -216,20 +224,20 @@ div.verse{
 	left: 50%;
   transform: translate(-50%,-50%);
 	> h2 {
-		font-family: 'HoboWeb';
+		font-family: 'Open Sans', sans-serif;
 		font-size: 40px;
 		margin-top: 50px;
 	}
 }
 
 div.verse.peace > h1 {
-	font-family: 'HoboWeb';
+	font-family: 'Open Sans', sans-serif;
 	font-size: 75px;
 	margin-top: 20px;
 }
 
 div.verse.truth > h1 {
-	font-family: 'HoboWeb';
+	font-family: 'Open Sans', sans-serif;
 	font-size: 75px;
 	margin-top: 100px;
 }
@@ -244,17 +252,29 @@ div.verse.mobile > h2{
 
 /* service stuff */
 .services {
-	margin: 40px 0;
+    margin-top: 70px;
 }
 
 .service {
-	width: 100%;
-	height: 320px;
-	margin: 80px 0;
 	text-align: center;
-	border: 1px solid #ddd;
-	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease;
+}
+
+.service > h3 {
+    font-size: 23px;
+    margin-top: -22px;
+    font-weight: 700;
+}
+
+.service.care > h3 {
+    color: $green;
+}
+
+.service.faith > h3 {
+    color: $red;
+}
+
+.service.location > h3 {
+    color: $blue;
 }
 
 .service .icon-holder {
@@ -269,137 +289,109 @@ div.verse.mobile > h2{
 }
 
 .service .heading {
-	font-family: 'HoboWeb';
+	font-family: 'Open Sans', sans-serif;
 	position: relative;
 	top: 80px;
 	-webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.service .icon-holder > img.icon {
-	width: 80px;
-}
-
-.service.care:hover {
-	border-color: $green;
-}
-
-.service.faith:hover {
-	border-color: $red;
-}
-
-.service.location:hover {
-	border-color: $blue;
-}
-
-.service:hover .icon-holder {
-	top: -30px;
-}
-
-.service:hover .heading {
-	top: -30px;
+img.icon {
+	width: 90px;
 }
 
 .service .description {
-	width: 80%;
-	margin: 0 auto;
-	opacity: 0;
-	-webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	-webkit-transform: scale(0);
-	-ms-transform: scale(0);
-	transform: scale(0);
-}
-
-.service:hover .description {
-	opacity: 1;
-	-webkit-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
+	margin-top: 25px;
+    width: 100%;
+    line-height: 1.6;
+    color: #888;
 }
 
 /* end of service stuff ***************************************/
 
-section.mission, section.testimonial {
-	background-color: $blue;
-	background-image: url("../../images/pattern2.png");
-	background-repeat: repeat;
-	color: white;
+section.mission {
+    width: 100%;
+    padding: 50px 0 30px;
+    position: relative;
+	color: #888;
 	font-size: 19px;
-	min-height: 400px;
-	padding-top: 50px;
-	padding-bottom: 50px;
 	text-align: center;
 	.section-title h5 {
-		color: #000;
-		font-weight: bold;
+		color: $blue;
+		font-weight: 600;
 		font-size: 30px;
-		font-family: 'LiberationSans';
+		font-family: 'Open Sans', sans-serif;
 	}
 }
 
 .mission-statement {
-	font-size: 18px;
 	margin-top: 15px;
 	margin-bottom: 30px;
 	text-align: justify;
+    
+    line-height: 1.6;
+    font-size: 16px;
+    color: #888;
 	> h1 {
-		font-family: 'HoboWeb' !important;
+		font-family: 'Open Sans', sans-serif;
 		text-align: center;
-		border-bottom-width: thin;
-		border-bottom-style: solid;
+        color: $blue;
+        font-weight: 800;
+        font-size: 32px;
 	}
 }
 
-.btn-join-us {
-	border: none;
-	background: none;
+section.testimonial {
+    width: 100%;
+    padding: 50px 0 30px;
+    position: relative;
+    background: #4385F5;
+    background: -moz-linear-gradient(top,#4385F5 0,#23457F 100%);
+    background: -webkit-linear-gradient(top,#4385F5 0,#23457F 100%);
+    background: linear-gradient(to bottom,#4385F5 0,#23457F 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4385F5', endColorstr='#23457F', GradientType=0 );
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
 	color: white;
-	cursor: pointer;
-	padding: 10px 80px;
-	display: inline-block;
-	margin: 5px 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 700;
-	outline: none;
-	position: relative;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.btn-join-us:after {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-/* Button 1 */
-.btn-join-us {
-	border: 3px solid #fff;
-	color: #fff;
-}
-
-/* Button 1a */
-.btn-join-us:hover,
-.btn-join-us:active
- {
-	color: $blue;
-	background: #fff;
+	font-size: 19px;
+	text-align: center;
+    > h1 {
+		font-family: 'Open Sans', sans-serif;
+		text-align: center;
+        color: white;
+        font-weight: 800;
+        font-size: 32px;
+	}
 }
 
 .section-title {
-	color: $blue;
 	margin-bottom: 35px;
 	text-align: center;
-	font-family: 'HoboWeb';
+	font-family: 'Open Sans', sans-serif;
 	h1 {
 		font-size: 36px;
 	}
+}
+
+h1.testimonial {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+h1.staff {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: $blue;
+    font-weight: 800;
+    font-size: 32px;
 }
 
 section.staff {
@@ -408,70 +400,102 @@ section.staff {
 	text-align: center;
 }
 
+img.staff {
+    width: 150px;
+}
+
 .staff-member {
 	display: block;
-  margin: 0 auto 50px;
-  width: 100%;
-  max-width: 300px;
+    margin: 0 auto 50px;
+    width: 100%;
+    max-width: 300px;
 }
 
-.staff-member-holder {
-	position: relative;
-	overflow: hidden;
+.staff-name {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
 }
 
-.staff-member-image {
-	float: none;
-	overflow: hidden;
-	height: 0;
-	width: 100%;
-	padding-bottom: 100%;
-	border-radius: 5%;
-	// background-image: url("../../images/team-member-2.jpg");
-	background-size: 100%;
+.staff-title {
+    font-size: 13px;
+    font-weight: 900;
 }
 
-// .staff-member-image:hover {
-// 	background-image: url("../../images/team-member-1.jpg");
-// }
-
-.staff-member-image img {
-	width: 100%;
+.staff-title.blue {
+    color: $blue;
 }
 
-.staff-member-info {
-	margin-left: 0;
-	min-height: 1px;
-	padding: 15px 0 0;
-	text-align: center;
-	h4 {
-		border-bottom-style: ridge;
-	}
+.staff-title.green {
+    color: $green;
 }
 
-section.testimonial {
-	.section-title > h1 {
-		color: white;
-	}
+.staff-title.red {
+    color: $red;
+}
+
+.staff-title.yellow {
+    color: $yellow;
+}
+
+.staff-title.orange {
+    color: $orange;
 }
 
 .testimonial-content {
 	color: white;
+    width: 100%;
+    background-color: #3870CF;
+    margin-bottom: 55px;
+    padding: 25px 50px;
+    position: relative;
+    &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        margin-right: auto;
+        margin-left: auto;
+        border-style: solid;
+        border-width: 19px 18px 0;
+        border-color: #3870CF transparent transparent;
+        position: absolute;
+        right: 0;
+        bottom: -19px;
+        left: 0;
+    }
 }
 
 .testimonial-parent {
 	margin-top: 10px;
-}
-
-.testimonial-nav {
-
+    font-size: 20px;
+    font-weight: 600;
 }
 
 section.classes {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	.section-title {
-		color: $green;
+	width: 100%;
+    height: 300px;
+    padding: 50px 0 30px;
+    position: relative;
+    background: #109D59;
+    background: -moz-linear-gradient(top,#109D59 0,#095631 100%);
+    background: -webkit-linear-gradient(top,#109D59 0,#095631 100%);
+    background: linear-gradient(to bottom,#109D59 0,#095631 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#109D59', endColorstr='#095631', GradientType=0 );
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+	color: white;
+	font-size: 19px;
+	text-align: center;
+    > h1 {
+		font-family: 'Open Sans', sans-serif;
+		text-align: center;
+        color: white;
+        font-weight: 800;
+        font-size: 32px;
 	}
 }
 
@@ -481,7 +505,7 @@ section.contact {
 	border-top-style: solid;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	font-family: "HoboWeb";
+	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	text-align: center;
 	.section-title {
@@ -490,7 +514,7 @@ section.contact {
 }
 
 section.schedule {
-	font-family: "HoboWeb";
+	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	text-align: center;
 	padding-top: 50px;
@@ -537,7 +561,7 @@ button.schedule-btn {
 
 section.resources {
 	background-color: $yellow;
-	font-family: "HoboWeb";
+	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -553,7 +577,7 @@ section.resources {
 
 a.resource {
 	color: white;
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 svg.contact {
