@@ -14,10 +14,17 @@ $(document).ready(function() {
       $(this).attr('data-target', hash);
 
 	});
+  
+  $("#classes-nav a").on("click", function(){
+    $("#classes-nav").find(".active").removeClass("active");
+    $(this).parent().addClass("active");
+  });
+  
+  $("#classes-nav").find(".infants").addClass("active");
 
   $('body').scrollspy({
   		target: '.navbar-collapse',
-  		offset: 100
+  		offset: 150
   	});
 
   	$('[data-spy="scroll"]').each(function () {
@@ -68,13 +75,22 @@ $(document).ready(function() {
         navigation: false,
         pagination: true
       });
-
-      $('.schedule-btn').click(function() {
-        $('.schedule-btn').removeClass('selected');
-        var classSchedule = $(this);
-        classSchedule.addClass('selected');
-        updateSchedule(classSchedule.attr('id'));
-      });
+      
+    var classesOwl = $("#classes-carousel");
+    classesOwl.owlCarousel({
+        singleItem: true,
+        autoPlay: false,
+        stopOnHover: false,
+        navigation: true,
+        pagination: true
+    });
+      
+    
+    $("h1").click(function() {
+        var owl = $("#classes-carousel");
+        owl.owlCarousel();
+        owl.trigger('next.owl.carousel');
+    });
 
 });
 

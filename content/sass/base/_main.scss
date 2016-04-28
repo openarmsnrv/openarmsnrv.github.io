@@ -394,6 +394,14 @@ h1.staff {
     font-size: 32px;
 }
 
+h1.classes {
+	font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: $green;
+    font-weight: 800;
+    font-size: 32px;
+}
+
 section.staff {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -405,6 +413,10 @@ img.staff {
 }
 
 .staff-member {
+    margin-top: 25px;
+}
+
+.mobile-staff > .staff-member {
 	display: block;
     margin: 0 auto 50px;
     width: 100%;
@@ -473,30 +485,23 @@ img.staff {
 
 section.classes {
 	width: 100%;
-    height: 300px;
+    height: 500px;
     padding: 50px 0 30px;
     position: relative;
-    background: #109D59;
-    background: -moz-linear-gradient(top,#109D59 0,#095631 100%);
-    background: -webkit-linear-gradient(top,#109D59 0,#095631 100%);
-    background: linear-gradient(to bottom,#109D59 0,#095631 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#109D59', endColorstr='#095631', GradientType=0 );
+    background: white;
+    // background: -moz-linear-gradient(top,#109D59 0,#095631 100%);
+    // background: -webkit-linear-gradient(top,#109D59 0,#095631 100%);
+    // background: linear-gradient(to bottom,#109D59 0,#095631 100%);
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#109D59', endColorstr='#095631', GradientType=0 );
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-	color: white;
+	color: $green;
 	font-size: 19px;
 	text-align: center;
-    > h1 {
-		font-family: 'Open Sans', sans-serif;
-		text-align: center;
-        color: white;
-        font-weight: 800;
-        font-size: 32px;
-	}
 }
 
 section.contact {
@@ -633,6 +638,89 @@ section.footer {
 			margin-top: 110px;
 		}
 	}
+}
+
+#classes-nav > li {
+    position: relative;
+    text-align: right;
+    padding-right: 20px;
+    margin: 12px 0;
+    font-size: 2.5rem;
+    // font-family: "klavika-web", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.no-ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+#classes-wrap #classes-nav {
+    margin-bottom: 0;
+}
+
+#classes-nav-wrap {
+    border-right: 1px solid rgba(3,8,17,0.05);
+}
+
+#classes-nav li > a {
+    color: #888;
+    line-height: 28px;
+    letter-spacing: -.5px;
+	text-decoration: none;
+}
+
+#classes-nav li i {
+    position: absolute;
+    top: -3px;
+    right: -16px;
+    width: 4px;
+    height: 100%;
+}
+
+#classes-nav > li.infants > a:hover,
+#classes-nav > li.infants.active > a {
+	color: $blue;
+}
+
+#classes-nav > li.infants.active > a > i {
+    background-color: $blue;
+}
+
+#classes-nav > li.toddlers > a:hover,
+#classes-nav > li.toddlers.active > a {
+	color: $green;
+}
+#classes-nav > li.toddlers.active > a > i {
+    background-color: $green;
+}
+
+#classes-nav > li.twos > a:hover,
+#classes-nav > li.twos.active > a {
+	color: $red;
+}
+#classes-nav > li.twos.active > a > i {
+    background-color: $red;
+}
+
+#classes-nav > li.threes > a:hover,
+#classes-nav > li.threes.active > a {
+	color: $yellow;
+}
+#classes-nav > li.threes.active > a > i {
+    background-color: $yellow;
+}
+
+#classes-nav > li.fours > a:hover,
+#classes-nav > li.fours.active > a {
+	color: $orange;
+}
+#classes-nav > li.fours.active > a > i {
+    background-color: $orange;
 }
 
 
