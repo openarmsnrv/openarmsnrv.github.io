@@ -667,7 +667,7 @@ section.footer {
     border-right: 1px solid rgba(3,8,17,0.05);
 }
 
-#classes-nav li > a {
+#classes-nav li > span {
     color: #888;
     line-height: 28px;
     letter-spacing: -.5px;
@@ -682,44 +682,49 @@ section.footer {
     height: 100%;
 }
 
-#classes-nav > li.infants > a:hover,
-#classes-nav > li.infants.active > a {
+#classes-nav > li.infants > span:hover,
+#classes-nav > li.infants.active > span {
 	color: $blue;
+	cursor: pointer;
 }
 
-#classes-nav > li.infants.active > a > i {
+#classes-nav > li.infants.active > span > i {
     background-color: $blue;
 }
 
-#classes-nav > li.toddlers > a:hover,
-#classes-nav > li.toddlers.active > a {
+#classes-nav > li.toddlers > span:hover,
+#classes-nav > li.toddlers.active > span {
 	color: $green;
+	cursor: pointer;
 }
-#classes-nav > li.toddlers.active > a > i {
+#classes-nav > li.toddlers.active > span > i {
     background-color: $green;
 }
 
-#classes-nav > li.twos > a:hover,
-#classes-nav > li.twos.active > a {
+#classes-nav > li.twos > span:hover,
+#classes-nav > li.twos.active > span {
 	color: $red;
+	cursor: pointer;
 }
-#classes-nav > li.twos.active > a > i {
+#classes-nav > li.twos.active > span > i {
     background-color: $red;
 }
 
-#classes-nav > li.threes > a:hover,
-#classes-nav > li.threes.active > a {
+#classes-nav > li.threes > span:hover,
+#classes-nav > li.threes.active > span {
 	color: $yellow;
+	cursor: pointer;
 }
-#classes-nav > li.threes.active > a > i {
+#classes-nav > li.threes.active > span > i {
     background-color: $yellow;
 }
 
-#classes-nav > li.fours > a:hover,
-#classes-nav > li.fours.active > a {
+#classes-nav > li.fours > span:hover,
+#classes-nav > li.fours.active > span {
 	color: $orange;
+	cursor: pointer;
 }
-#classes-nav > li.fours.active > a > i {
+#classes-nav > li.fours.active > span > i {
     background-color: $orange;
 }
 
