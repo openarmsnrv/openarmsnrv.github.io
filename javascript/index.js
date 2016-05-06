@@ -66,14 +66,31 @@ $(document).ready(function() {
       });
     }
 
-    $("#staff-carousel").owlCarousel({items : 5});
+    $("#staff-carousel").owlCarousel({
+      loop:true,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:3,
+          },
+          600:{
+              items:3,
+          },
+          1000:{
+              items:5,
+              loop:false
+          }
+      }
+    });
+    
     $("#testimonial-carousel").owlCarousel(
       {
         items:1,
+        responsiveClass: true,
         loop:true,
         autoplay:true,
-        autoplayHoverPause:true,
-        dotsEach: true
+        dotsEach: true,
+        dots: true
       });
       
     var classesOwl = $("#classes-carousel");

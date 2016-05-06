@@ -414,6 +414,8 @@ img.staff {
 
 .staff-member {
     margin-top: 25px;
+	margin-left: 10px;
+    margin-right: 10px;
 }
 
 .mobile-staff > .staff-member {
@@ -583,6 +585,7 @@ section.resources {
 a.resource {
 	color: white;
 	font-family: 'Open Sans', sans-serif;
+	display: block;
 }
 
 svg.contact {
@@ -728,6 +731,50 @@ section.footer {
     background-color: $orange;
 }
 
+// .resource-container {
+//   width: 100%;
+//   position: relative;
+//   text-align: center;
+// }
+
+.resource-container > img {
+  display: inline;
+}
+
+.links-container {
+	width: 50%;
+}
+
+// .links-container > a {
+//   color: white;
+//   font-size: 24px;
+//   font-weight: bold;
+//   text-align: left;
+// }
+
+.caption {
+	width: 100%;
+    bottom: 2.3rem;
+    position: absolute;
+    text-align: left;
+    margin-left: 15px;
+	line-height: 50px;
+}
+
+.thumbnail {
+	background: transparent;
+	border: 0 none;
+	margin:0;
+	padding:0;
+}
+
+.caption a {
+	color: #fff;
+	font-weight: 800;
+	font-size: 2.3rem;
+	-webkit-font-smoothing: antialiased;
+}
+
 
 /* ============================================================
   SECTIONS
@@ -809,6 +856,7 @@ $break-xlarge: 1440px;
 	background: {
 		repeat: no-repeat;
 		position: center;
+		size: cover;
 	}
 
 	.overlay {
@@ -921,4 +969,33 @@ $break-xlarge: 1440px;
 	@include min-screen($break-large) {
 		font-size: 2.2em;
 	}
+}
+
+.hero-unit-fullscreen .down-arrow {
+   position: absolute;
+   left: 50%;
+   margin-left: -30px;
+   text-align: center;
+   display: none;
+}
+
+html.fullscreen,
+html.fullscreen body,
+html.fullscreen .wrapper {
+   height: 100%;
+}
+
+.services {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.services:before {
+	content: "";
+	position: absolute;
+	left: 25%;
+	bottom: 0;
+	height: 1px;
+	width: 50%;
+	border-bottom: 3px solid $red;
 }
