@@ -612,6 +612,8 @@ a.resource {
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	display: block;
+	font-size: 30px;
+	text-align: left;
 }
 
 svg.contact {
@@ -780,7 +782,7 @@ section.footer {
 
 .caption {
 	width: 100%;
-    bottom: 2.3rem;
+    top: 25rem;
     position: absolute;
     text-align: left;
     margin-left: 15px;
@@ -792,6 +794,12 @@ section.footer {
 	border: 0 none;
 	margin:0;
 	padding:0;
+	margin-left: 15px;
+    margin-right: 15px;
+}
+
+.thumbnail > h2 {
+	text-align: center;
 }
 
 .caption a {
@@ -1024,4 +1032,37 @@ html.fullscreen .wrapper {
 	height: 1px;
 	width: 50%;
 	border-bottom: 3px solid $red;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+
+[class*="col-centered-"] {
+    display: block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    // margin-right:-4px;
+}
+
+/* Default BS breakpoints */
+@media (min-width: 768px) {
+  .col-centered-sm {
+    display: inline-block
+  }
+}
+
+@media (min-width: 992px) {
+  .col-centered-md {
+    display: inline-block
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-centered-lg {
+    display: inline-block
+  }
 }
