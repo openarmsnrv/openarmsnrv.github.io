@@ -32,13 +32,6 @@ $(document).ready(function() {
 
 	});
   
-  $("#classes-nav span").on("click", function(){
-    $("#classes-nav").find(".active").removeClass("active");
-    $(this).parent().addClass("active");
-  });
-  
-  $("#classes-nav").find(".infants").addClass("active");
-  
   $("#testimonial-carousel").owlCarousel(
     {
       items:1,
@@ -49,26 +42,10 @@ $(document).ready(function() {
       dots: true
     });
     
-  var classesOwl = $("#classes-carousel");
-  classesOwl.owlCarousel({
-      items: 1,
-      autoPlay: false,
-      stopOnHover: false
-  });
-  
-  $("#mobile-classes-carousel").owlCarousel(
-    {
-      items:1,
-      loop:true,
-      autoplay:true,
-      dotsEach: true,
-      dots: true
+    $('.portfolio-item').on('click', function() {
+      // do nothing, somehow this triggering portfolio overlay on mobile Safari
     });
-    
-  
-  $("li.class").click(function(event) {
-      var slide = $(event.currentTarget).data("class");
-      $("#classes-carousel").trigger('to.owl.carousel', [slide, 300]);
-  });
-
+    $('.class-item').on('click', function() {
+      // do nothing, somehow this triggering portfolio overlay on mobile Safari
+    });
 });
