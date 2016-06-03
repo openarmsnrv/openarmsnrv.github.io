@@ -38,23 +38,6 @@ $(document).ready(function() {
   });
   
   $("#classes-nav").find(".infants").addClass("active");
-
-  $("#staff-carousel").owlCarousel({
-    loop:true,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:3,
-        },
-        600:{
-            items:3,
-        },
-        1000:{
-            items:5,
-            loop:false
-        }
-    }
-  });
   
   $("#testimonial-carousel").owlCarousel(
     {
