@@ -1066,3 +1066,121 @@ html.fullscreen .wrapper {
     display: inline-block
   }
 }
+
+.test {
+	// height: 150px;
+	// background-color: #4E98F3;
+	// border: solid 1px black;
+}
+
+.test > img {
+	width: 100%;
+}
+
+.test:hover .staff-info {
+	display: block;
+	background: orange;
+}
+
+.staff-info {
+	display: none;
+}
+
+.portfolio-item {
+  position: relative;
+}
+.portfolio-item .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.portfolio-item .overlay.red {
+  background-color: rgba(220, 68, 55, 0.9);
+}
+.portfolio-item .overlay.blue {
+  background-color: rgba(67, 133, 245, 0.9);
+}
+.portfolio-item .overlay.green {
+  background-color: rgba(16, 157, 89, 0.9);
+}
+.portfolio-item .overlay.orange {
+  background-color: rgba(243, 112, 33, 0.9);
+}
+.portfolio-item .overlay.yellow {
+  background-color: rgba(252, 190, 31, 0.9);
+}
+
+.portfolio-item .info {
+  position: absolute;
+  top: 50%;
+  margin-top: -49px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.portfolio-item .media-wrapper {
+  overflow: hidden;
+}
+.portfolio-item .title {
+  font-family: inherit;
+  color: #fff;
+}
+.portfolio-item .brief-description {
+  font-weight: 300;
+}
+.portfolio-item .overlay, .portfolio-item .info {
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+.portfolio-item img {
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  max-width: 100%;
+}
+.portfolio-item:hover img {
+  -moz-transform: scale(1.3, 1.3);
+  -ms-transform: scale(1.3, 1.3);
+  -webkit-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
+}
+.portfolio-item:hover .overlay, .portfolio-item:hover .info {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  z-index: 1;
+}
+.portfolio-item a, .portfolio-item a:hover, .portfolio-item a:focus {
+  color: #fff;
+}
+.portfolio-item .btn {
+  background-color: #4474af;
+  border: 1px solid #396192;
+}
+.portfolio-item .btn:hover, .portfolio-item .btn:focus {
+  color: #fff;
+  background-color: #406da4;
+}
+
+.portfolio-nospace .portfolio-item {
+  margin-bottom: 0;
+}
+
+.portfolio-static {
+  margin: 0 10px;
+}
+.portfolio-static .portfolio-item {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.row .test {
+	padding-bottom: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 4px;
+}
