@@ -607,12 +607,21 @@ section.resources {
 	margin-top: 30px;
 }
 
-a.resource {
-	color: white;
+a.resource-link {
+	position: absolute;
+  	top: 50%;
+	width: 100%;
+	color: $yellow;
 	font-family: 'Open Sans', sans-serif;
 	display: block;
-	font-size: 30px;
-	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	opacity: 0;
+}
+
+.resource-item:hover .resource-link{
+	opacity: 1;
 }
 
 svg.contact {
@@ -758,12 +767,6 @@ section.footer {
     background-color: $orange;
 }
 
-// .resource-container {
-//   width: 100%;
-//   position: relative;
-//   text-align: center;
-// }
-
 .resource-container > img {
   display: inline;
 }
@@ -771,13 +774,6 @@ section.footer {
 .links-container {
 	width: 50%;
 }
-
-// .links-container > a {
-//   color: white;
-//   font-size: 24px;
-//   font-weight: bold;
-//   text-align: left;
-// }
 
 .caption {
 	width: 100%;
@@ -884,7 +880,7 @@ $break-xlarge: 1440px;
 	font-size: 2em;
 	text-align: center;
 	color: #fff;
-	background-image: url('../../images/child.jpg');
+	background-image: url('../../images/building.jpg');
 
 	background: {
 		repeat: no-repeat;
@@ -899,7 +895,7 @@ $break-xlarge: 1440px;
 		top: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgb(87, 163, 255);
+		background-color: rgba(87, 163, 255, 0.5);
 	}
 
 	.container {
@@ -1190,14 +1186,9 @@ html.fullscreen .wrapper {
   margin-right: -10px;
 }
 
-.row .test {
-	padding-bottom: 4px;
-	padding-left: 4px;
-	padding-right: 4px;
-	padding-top: 4px;
-}
-
-.row .class {
+.row .test,
+.row .class,
+.row .resource {
 	padding-bottom: 4px;
 	padding-left: 4px;
 	padding-right: 4px;
@@ -1215,4 +1206,9 @@ html.fullscreen .wrapper {
 
 .class-item .class-heading h1 {
 	font-weight: bold;
+}
+
+.resource-item {
+	height: 200px;
+	background: white;
 }
