@@ -389,7 +389,7 @@ h1.testimonial {
 h1.staff {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    color: $blue;
+    color: $red;
     font-weight: 800;
     font-size: 32px;
 }
@@ -525,12 +525,6 @@ section.classes {
 	text-align: center;
 }
 
-@media (max-device-width: 480px) {
-  section.classes {
-    height: 420px;
-  }
-}
-
 section.contact {
 	border-top-width: medium;
 	border-top-color: $orange;
@@ -622,6 +616,10 @@ a.resource-link {
 
 .resource-item:hover .resource-link{
 	opacity: 1;
+}
+
+.resource-item:hover .resource-icon {
+	opacity: 0;
 }
 
 svg.contact {
@@ -1211,4 +1209,15 @@ html.fullscreen .wrapper {
 .resource-item {
 	height: 200px;
 	background: white;
+}
+
+.resource-icon {
+	padding-top: 10%;
+	width: 50%;
+}
+
+@media (max-device-width: 480px) {
+  .resource-item {
+    height: 150px;
+  }
 }
