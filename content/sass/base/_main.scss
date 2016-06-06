@@ -601,25 +601,19 @@ section.resources {
 	margin-top: 30px;
 }
 
-a.resource-link {
-	position: absolute;
-  	top: 50%;
+.resource a{
+	text-decoration: none;
+}
+
+.resource-link {
 	width: 100%;
 	color: $yellow;
 	font-family: 'Open Sans', sans-serif;
 	display: block;
 	font-size: 20px;
 	font-weight: bold;
-	text-align: center;
-	opacity: 0;
-}
-
-.resource-item:hover .resource-link{
-	opacity: 1;
-}
-
-.resource-item:hover .resource-icon {
-	opacity: 0;
+	text-align: bottom;
+	text-decoration: none;
 }
 
 svg.contact {
