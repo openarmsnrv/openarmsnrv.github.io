@@ -872,7 +872,7 @@ $break-xlarge: 1440px;
 	font-size: 2em;
 	text-align: center;
 	color: #fff;
-	background-image: url('../../images/building.jpg');
+	background-image: url('../../images/openarmsPic.png');
 
 	background: {
 		repeat: no-repeat;
@@ -929,11 +929,10 @@ $break-xlarge: 1440px;
 		left: 50%;
 		margin-left: -30px;
 		text-align: center;
-		display: none;
 
 		@include min-screen($break-large) {
 			display: block;
-			bottom: 1em;
+			bottom: 0;
 		}
 
 		a {
@@ -946,7 +945,7 @@ $break-xlarge: 1440px;
 			height: 60px;
 			line-height: 60px;
 			color: #fff;
-			border: 2px solid #fff;
+			// border: 2px solid #fff;
 
 			&:hover, &:focus {
 				// @include opacity(0.8);
@@ -997,7 +996,6 @@ $break-xlarge: 1440px;
    left: 50%;
    margin-left: -30px;
    text-align: center;
-   display: none;
 }
 
 html.fullscreen,
@@ -1214,4 +1212,15 @@ html.fullscreen .wrapper {
   .resource-item {
     height: 150px;
   }
+}
+
+.main-verse {
+	font-size: 22px;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    bottom: 2em;
+    padding: 30px;
+    text-align: center;
+	width: 100%;
 }

@@ -13,7 +13,15 @@ $(document).ready(function() {
       duration: 1000,
 			easing: 'easeInOutExpo',
       offset: {
-          top: -70
+          // top: -2
+      }
+  });
+  
+  $('.scroll-down').localScroll({
+      duration: 1000,
+			easing: 'easeInOutExpo',
+      offset: {
+          top: -40
       }
   });
   

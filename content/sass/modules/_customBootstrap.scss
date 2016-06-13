@@ -7,8 +7,8 @@
 }
 
 .navbar {
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    min-height: 90px;
+	// box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  min-height: 90px;
 	margin: 0;
 }
 
@@ -16,11 +16,15 @@
 	margin-top: 32px;
 }
 
+.navbar-fixed-top, .navbar-fixed-bottom {
+  position: absolute;
+}
+
 .nav > li > a {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
 	font-weight: bold;
-    line-height: 90px;
+  line-height: 90px;
 }
 
 .navbar-nav>li>.dropdown-menu {
@@ -61,7 +65,7 @@
 }
 
 .navbar-default {
-  background-color: #ffffff;
+  background-color: transparent;
   border-color: transparent;
 }
 
@@ -83,11 +87,17 @@
 }
 
 .navbar-default .navbar-nav {
+     > li > a {
+       color: white;
+     }
+}
+
+.navbar-default .navbar-nav {
      > li > a.about {
       &:hover,
       &:focus {
         color: $blue;
-        background-color: white;
+        // background-color: white;
       }
     }
     > .active > a.about {
@@ -95,14 +105,14 @@
       &:hover,
       &:focus {
         color: $blue;
-        background-color: white;
+        // background-color: white;
       }
     }
      > li > a.classes {
       &:hover,
       &:focus {
         color: $green;
-				background-color: white;
+				// background-color: white;
       }
     }
     > .active > a.classes {
@@ -110,14 +120,14 @@
       &:hover,
       &:focus {
         color: $green;
-				background-color: white;
+				// background-color: white;
       }
     }
     > li > a.schedule {
       &:hover,
       &:focus {
         color: $red;
-				background-color: white;
+				// background-color: white;
       }
     }
     > .active > a.schedule {
@@ -125,14 +135,14 @@
       &:hover,
       &:focus {
         color: $red;
-				background-color: white;
+				// background-color: white;
       }
     }
      > li > a.resources {
       &:hover,
       &:focus {
         color: $yellow;
-				background-color: white;
+				// background-color: white;
       }
     }
     > .active > a.resources {
@@ -140,13 +150,13 @@
       &:hover,
       &:focus {
         color: $yellow;
-				background-color: white;
+				// background-color: white;
       }
     }
     > li > a.contact {
       &:hover,
       &:focus {
-        background-color: white;
+        // background-color: white;
         color: $orange;
       }
     }
@@ -154,7 +164,7 @@
       &,
       &:hover,
       &:focus {
-        background-color: white;
+        // background-color: white;
         color: $orange;
       }
     }
