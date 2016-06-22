@@ -610,10 +610,11 @@ section.resources {
 	color: $yellow;
 	font-family: 'Open Sans', sans-serif;
 	display: block;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: bold;
-	text-align: bottom;
 	text-decoration: none;
+	position: absolute;
+	bottom: 10px;
 }
 
 svg.contact {
@@ -1048,17 +1049,11 @@ html.fullscreen .wrapper {
   .col-centered-sm {
     display: inline-block
   }
-  .down-arrow {
-	  display: none !important;
-  }
 }
 
 @media (min-width: 992px) {
   .col-centered-md {
     display: inline-block
-  }
-  .down-arrow {
-	  display: none;
   }
 }
 
@@ -1226,7 +1221,10 @@ html.fullscreen .wrapper {
 
 @media (max-device-width: 480px) {
   .resource-item {
-    height: 150px;
+    height: 165px;
+  }
+  .down-arrow {
+	  display: none;
   }
 }
 
