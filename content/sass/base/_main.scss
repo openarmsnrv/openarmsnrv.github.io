@@ -867,12 +867,18 @@ $break-medium: 992px;
 $break-large: 1200px;
 $break-xlarge: 1440px;
 .hero-unit-fullscreen {
+	display: flex;
 	position: relative;
 	height: 100%;
 	font-size: 2em;
 	text-align: center;
 	color: #fff;
-	background-image: url('../../images/openarmspic.png');
+	background-image: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		),
+		url('../../images/background_chalk.jpg');
 
 	background: {
 		repeat: no-repeat;
@@ -989,6 +995,11 @@ $break-xlarge: 1440px;
 	@include min-screen($break-large) {
 		font-size: 2.2em;
 	}
+}
+
+.main-hero-logo {
+	margin: auto;
+	width: 100%;
 }
 
 .hero-unit-fullscreen .down-arrow {
