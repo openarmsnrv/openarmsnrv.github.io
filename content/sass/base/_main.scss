@@ -877,8 +877,7 @@ $break-xlarge: 1440px;
 		linear-gradient(
 			rgba(0, 0, 0, 0.5),
 			rgba(0, 0, 0, 0.5)
-		),
-		url('../../images/background_chalk.jpg');
+		);
 
 	background: {
 		repeat: no-repeat;
@@ -1049,11 +1048,17 @@ html.fullscreen .wrapper {
   .col-centered-sm {
     display: inline-block
   }
+  .down-arrow {
+	  display: none !important;
+  }
 }
 
 @media (min-width: 992px) {
   .col-centered-md {
     display: inline-block
+  }
+  .down-arrow {
+	  display: none;
   }
 }
 

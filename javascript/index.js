@@ -1,5 +1,8 @@
 $(document).ready(function() {
   
+  var numRand = Math.floor(Math.random() * 5);
+  $('.hero-unit-fullscreen').css('background-image', 'linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background_hero' + numRand + '.jpg)');
+
   $('body').scrollspy({
     target: '.navbar-collapse',
     offset: 150
