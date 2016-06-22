@@ -23,8 +23,8 @@
 .nav > li > a {
   font-family: 'Open Sans', sans-serif;
   font-size: 17px;
-	font-weight: bold;
-  line-height: 90px;
+  font-weight: 700;
+  padding: 20px;
 }
 
 .navbar-nav>li>.dropdown-menu {
@@ -93,78 +93,34 @@
 }
 
 .navbar-default .navbar-nav {
+     > li > a:focus {
+       color: white;
+     }
+}
+
+.navbar-default .navbar-nav {
      > li > a.about {
-      &:hover,
-      &:focus {
+      &:hover {
         color: $blue;
-        // background-color: white;
-      }
-    }
-    > .active > a.about {
-      &,
-      &:hover,
-      &:focus {
-        color: $blue;
-        // background-color: white;
       }
     }
      > li > a.classes {
-      &:hover,
-      &:focus {
+      &:hover{
         color: $green;
-				// background-color: white;
-      }
-    }
-    > .active > a.classes {
-      &,
-      &:hover,
-      &:focus {
-        color: $green;
-				// background-color: white;
       }
     }
     > li > a.schedule {
-      &:hover,
-      &:focus {
+      &:hover {
         color: $red;
-				// background-color: white;
-      }
-    }
-    > .active > a.schedule {
-      &,
-      &:hover,
-      &:focus {
-        color: $red;
-				// background-color: white;
       }
     }
      > li > a.resources {
-      &:hover,
-      &:focus {
+      &:hover {
         color: $yellow;
-				// background-color: white;
-      }
-    }
-    > .active > a.resources {
-      &,
-      &:hover,
-      &:focus {
-        color: $yellow;
-				// background-color: white;
       }
     }
     > li > a.contact {
-      &:hover,
-      &:focus {
-        // background-color: white;
-        color: $orange;
-      }
-    }
-    > .active > a.contact {
-      &,
-      &:hover,
-      &:focus {
-        // background-color: white;
+      &:hover{
         color: $orange;
       }
     }
