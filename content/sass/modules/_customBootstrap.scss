@@ -51,7 +51,7 @@
 	.classes {
 		&:hover,
 		&:focus {
-			color: $green;
+			color: $blue;
 		}
 	}
 }
@@ -101,22 +101,22 @@
 .navbar-default .navbar-nav {
      > li > a.about {
       &:hover {
-        color: $blue;
+        color: $red;
       }
     }
      > li > a.classes {
       &:hover{
-        color: $green;
+        color: $blue;
       }
     }
     > li > a.schedule {
       &:hover {
-        color: $red;
+        color: $yellow;
       }
     }
      > li > a.resources {
       &:hover {
-        color: $yellow;
+        color: $green;
       }
     }
     > li > a.contact {

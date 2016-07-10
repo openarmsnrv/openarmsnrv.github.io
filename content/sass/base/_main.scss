@@ -251,9 +251,6 @@ div.verse.mobile > h2{
 }
 
 /* service stuff */
-.services {
-    margin-top: 70px;
-}
 
 .service {
 	text-align: center;
@@ -265,16 +262,8 @@ div.verse.mobile > h2{
     font-weight: 700;
 }
 
-.service.care > h3 {
-    color: $green;
-}
-
-.service.faith > h3 {
-    color: $red;
-}
-
-.service.location > h3 {
-    color: $blue;
+.service > h3 {
+    color: white;
 }
 
 .service .icon-holder {
@@ -304,46 +293,65 @@ img.icon {
 	margin-top: 25px;
     width: 100%;
     line-height: 1.6;
-    color: #888;
+    color: white;
 }
 
 /* end of service stuff ***************************************/
 
-section.mission {
-    width: 100%;
-    padding: 50px 0 30px;
-    position: relative;
-	color: #888;
-	font-size: 19px;
-	text-align: center;
-	.section-title h5 {
-		color: $blue;
-		font-weight: 600;
-		font-size: 30px;
-		font-family: 'Open Sans', sans-serif;
-	}
-}
+// section.mission {
+// 	background: #4385F5;
+//     background: -moz-linear-gradient(top,#4385F5 0,#23457F 100%);
+//     background: -webkit-linear-gradient(top,#4385F5 0,#23457F 100%);
+//     background: linear-gradient(to bottom,#4385F5 0,#23457F 100%);
+//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4385F5', endColorstr='#23457F', GradientType=0 );
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//     background-attachment: fixed;
+//     background-position: center center;
+//     width: 100%;
+//     padding: 0 0 30px;
+//     position: relative;
+// 	color: #888;
+// 	font-size: 19px;
+// 	text-align: center;
+// 	.section-title h5 {
+// 		color: $blue;
+// 		font-weight: 600;
+// 		font-size: 30px;
+// 		font-family: 'Open Sans', sans-serif;
+// 	}
+// }
 
 .mission-statement {
 	margin-top: 15px;
-	margin-bottom: 30px;
 	text-align: justify;
     
     line-height: 1.6;
     font-size: 16px;
-    color: #888;
+    color: white;
 	> h1 {
 		font-family: 'Open Sans', sans-serif;
 		text-align: center;
-        color: $blue;
+        color: white;
         font-weight: 800;
         font-size: 32px;
 	}
 }
 
+.bg-image {
+	position: relative;
+	> .image-text { 
+	position: absolute; 
+	top: 20px; 
+	left: 0; 
+	width: 100%; 
+	}
+}
+
 section.testimonial {
     width: 100%;
-    padding: 50px 0 30px;
     position: relative;
     background: #4385F5;
     background: -moz-linear-gradient(top,#4385F5 0,#23457F 100%);
@@ -389,7 +397,7 @@ h1.testimonial {
 h1.staff {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    color: $red;
+    color: white;
     font-weight: 800;
     font-size: 32px;
 }
@@ -411,9 +419,106 @@ h1.contact {
 }
 
 section.staff {
-	padding-top: 50px;
-	padding-bottom: 50px;
 	text-align: center;
+	color: white;
+	background-color: $yellow;
+	margin-top: -1px;
+	// background: #4385F5;
+    // background: -moz-linear-gradient(top,#4385F5 0,#23457F 100%);
+    // background: -webkit-linear-gradient(top,#4385F5 0,#23457F 100%);
+    // background: linear-gradient(to bottom,#4385F5 0,#23457F 100%);
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4385F5', endColorstr='#23457F', GradientType=0 );
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
+    // background-attachment: fixed;
+    // background-position: center center;
+}
+
+.staff-container,
+.class-container,
+.resource-container,
+.building-container,
+.planet-testimonial {
+	position: relative;
+}
+
+.staff-container > .section-title {
+	position: absolute;
+	bottom: 15px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-weight: 800;
+	font-size: 32px;
+	left: 50%;
+}
+
+.staff-container > .staff-quote {
+	position: absolute;
+	top: 10px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: white;
+	font-weight: 800;
+	font-size: 32px;
+	left: 50%;
+}
+
+.staff-label {
+	color: white;
+	position: relative;
+	left: -50%;
+}
+
+.class-container > .section-title,
+.resource-container > .section-title {
+	position: absolute;
+	bottom: 0;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-weight: 800;
+	font-size: 32px;
+	left: 50%;
+	margin: 0;
+}
+
+.building-container > .section-title {
+	position: absolute;
+	bottom: 40px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-weight: 800;
+	font-size: 32px;
+	left: 50%;
+	margin: 0;
+}
+
+.class-label {
+	color: $blue;
+	position: relative;
+	left: -50%;
+}
+
+.building-label {
+	color: white;
+	position: relative;
+	left: -50%;
+	font-size: 30px;
+}
+
+.open-arms-building {
+	margin-top: -2px;
+}
+
+.resource-label {
+	color: white;
+	position: relative;
+	left: -50%;
+}
+
+.container.staff.top {
+	top:0;
 }
 
 img.staff {
@@ -424,17 +529,19 @@ img.staff {
     margin-top: 25px;
 }
 
-@media (max-device-width: 480px) {
-  .staff-member {
-    margin-left: 10px;
-    margin-right: 10px;
+@media (max-width: 480px) {
+  .staff-container > .section-title {
+	  bottom: -30px;
   }
-}
-
-@media (min-width: 1200px) {
-  .staff-member {
-    margin-left: 0px;
-    margin-right: 0px;
+  .staff-container > .staff-quote {
+	  top: 5px;
+	  font-size: 12px;
+  }
+  .class-container > .section-title {
+	  bottom: -20px;
+  }
+  .resource-container > .section-title {
+	  bottom: -30px;
   }
 }
 
@@ -476,51 +583,51 @@ img.staff {
     color: $orange;
 }
 
+.testimonials {
+	padding-top: 100px;
+}
+
 .testimonial-content {
+	position: absolute;
+	top: 25%;
+	font-family: HoboWeb;
+	text-align: center;
+	// font-weight: 800;
+	font-size: 32px;
+	left: 50%;
+}
+
+.testimonial-quote {
 	color: white;
-    width: 100%;
-    background-color: #3870CF;
-    margin-bottom: 55px;
-    padding: 25px 50px;
-    position: relative;
-    &::after {
-        content: "";
-        width: 0;
-        height: 0;
-        margin-right: auto;
-        margin-left: auto;
-        border-style: solid;
-        border-width: 19px 18px 0;
-        border-color: #3870CF transparent transparent;
-        position: absolute;
-        right: 0;
-        bottom: -19px;
-        left: 0;
-    }
+	position: relative;
+	left: -50%;
+	font-size: 17px;
 }
 
 .testimonial-parent {
+	color: $blue;
 	margin-top: 10px;
+	position: absolute;
+	top: 0;
+	left: 100%;
     font-size: 20px;
     font-weight: 600;
 }
 
 section.classes {
 	width: 100%;
-    padding: 50px 0 30px;
     position: relative;
-    background: white;
-    // background: -moz-linear-gradient(top,#109D59 0,#095631 100%);
-    // background: -webkit-linear-gradient(top,#109D59 0,#095631 100%);
-    // background: linear-gradient(to bottom,#109D59 0,#095631 100%);
-    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#109D59', endColorstr='#095631', GradientType=0 );
+    background: #4385F5;
+    background: -moz-linear-gradient(top,#4385F5 0,#23457F 100%);
+    background: -webkit-linear-gradient(top,#4385F5 0,#23457F 100%);
+    background: linear-gradient(to bottom,#4385F5 0,#23457F 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4385F5', endColorstr='#23457F', GradientType=0 );
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-	color: $green;
 	font-size: 19px;
 	text-align: center;
 }
@@ -546,7 +653,7 @@ section.schedule {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	.section-title {
-		color: $red;
+		color: $yellow;
 	}
 }
 
@@ -586,11 +693,20 @@ button.schedule-btn {
 }
 
 section.resources {
-	background-color: $yellow;
+	 background: #4385F5;
+    background: -moz-linear-gradient(top,#4385F5 0,#23457F 100%);
+    background: -webkit-linear-gradient(top,#4385F5 0,#23457F 100%);
+    background: linear-gradient(to bottom,#4385F5 0,#23457F 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4385F5', endColorstr='#23457F', GradientType=0 );
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	padding-top: 50px;
-	padding-bottom: 50px;
 	text-align: center;
 	.section-title {
 		color: white;
@@ -607,7 +723,7 @@ section.resources {
 
 .resource-link {
 	width: 100%;
-	color: $yellow;
+	color: $green;
 	font-family: 'Open Sans', sans-serif;
 	display: block;
 	font-size: 16px;
@@ -670,6 +786,35 @@ section.footer {
 			margin-top: 110px;
 		}
 	}
+}
+
+.white-bg {
+	background-color: white;
+	padding-top: 50px;
+}
+
+.green-bg {
+	background-color: $green;
+	padding-top: 50px;
+}
+
+.cloud-top {
+	margin-top: 60px;
+	width: 101%;
+	margin-bottom: -1px;
+}
+
+.tree-top {
+	margin-bottom: -2px;
+}
+
+.container.cloud {
+	background-color: white;
+}
+
+.class-content-container {
+	border: 1px solid $blue;
+	// margin: 5px;
 }
 
 #classes-nav > li {
@@ -1016,18 +1161,34 @@ html.fullscreen .wrapper {
 }
 
 .services {
-    position: relative;
-    padding-bottom: 50px;
+	background-color: #322B47;
+    background-image: url("../../images/space.png");
+	padding-top: 50px;
+	background-size: 900px;
+    background-position: 100% 100%;
 }
 
-.services:before {
-	content: "";
-	position: absolute;
-	left: 25%;
-	bottom: 0;
-	height: 1px;
-	width: 50%;
-	border-bottom: 3px solid $red;
+.sun {
+	width: 100%;
+}
+
+.sun.top {
+	margin-top: 100px;
+	vertical-align: top;
+}
+
+.sun.bottom {
+	background: #4385F5;
+    background: -moz-linear-gradient(top,#4385F5 0,#23457F 100%);
+    background: -webkit-linear-gradient(top,#4385F5 0,#23457F 100%);
+    background: linear-gradient(to bottom,#4385F5 0,#23457F 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4385F5', endColorstr='#23457F', GradientType=0 );
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 /* centered columns styles */
@@ -1070,12 +1231,14 @@ html.fullscreen .wrapper {
 .portfolio-item, .class-item {
   position: relative;
 }
+
 .portfolio-item .overlay,
 .class-item .overlay {
   width: 100%;
   height: 100%;
   position: absolute;
 }
+
 .portfolio-item .overlay.red,
 .class-item .overlay.red {
   background-color: rgba(220, 68, 55, 0.9);
@@ -1095,6 +1258,10 @@ html.fullscreen .wrapper {
 .portfolio-item .overlay.yellow,
 .class-item .overlay.yellow {
   background-color: rgba(252, 190, 31, 0.9);
+}
+
+.brief-description {
+	font-size: 10px;
 }
 
 .portfolio-item .info,
@@ -1119,6 +1286,12 @@ html.fullscreen .wrapper {
   font-family: inherit;
   color: #fff;
 }
+
+.title {
+	font-size: 16px;
+	font-weight: bold;
+}
+
 .portfolio-item .brief-description {
   font-weight: 300;
 }
@@ -1209,23 +1382,24 @@ html.fullscreen .wrapper {
 	font-weight: bold;
 }
 
-.resource-item {
-	height: 200px;
-	background: white;
-}
-
 .resource-icon {
-	padding-top: 10%;
-	width: 50%;
+    padding-top: 10%;
+    height: 80%;
+    width: 50%;
 }
 
 @media (max-device-width: 480px) {
   .resource-item {
-    height: 165px;
+    height: 150px;
   }
   .down-arrow {
 	  display: none;
   }
+}
+
+.resource-item {
+	height: 150px;
+	background: white;
 }
 
 .main-verse {

@@ -12,10 +12,10 @@
 
 <text x="0" y="115" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Timothy Smith</text><text x="0" y="120" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>
 
-sunscreen by chiccabubble from noun project
+sunscreen by oliver guin from noun project
 social services by BenPixels from noun project
 apple by Creative Stall from noun project
-employment by 
-physical by Joao Proenca from noun project
-camera by Stanislav Levin from noun project
+employment by Michael Thompson
+physical by Zlatko Najdenovski from noun project
+camera by Megan Mitchell from noun project
 registration created by Wilson Joseph from noun project

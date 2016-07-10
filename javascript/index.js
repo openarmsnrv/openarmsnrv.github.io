@@ -24,7 +24,7 @@ $(document).ready(function() {
       duration: 1000,
 			easing: 'easeInOutExpo',
       offset: {
-          top: -40
+          // top: -20
       }
   });
   
