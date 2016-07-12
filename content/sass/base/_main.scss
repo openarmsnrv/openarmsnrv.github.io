@@ -652,6 +652,10 @@ section.contact {
 	text-decoration: none;
 }
 
+a.kevpo-link {
+	color: white;
+}
+
 .facebook-link:hover {
 	text-decoration: none;
 }
@@ -828,9 +832,27 @@ section.footer {
 	background-color: white;
 }
 
+.class-title {
+	font-weight: bold;
+	font-size: 25px; 
+	margin-bottom: 10px;
+}
+
 .class-content-container {
-	border: 1px solid $blue;
-	// margin: 5px;
+	margin-bottom: 30px;
+}
+
+.class-subtitle {
+	font-size: 14px;
+}
+
+.curriculum {
+	font-weight: bold;
+	color: $blue;
+}
+
+.curriculum > a {
+	color: $blue;
 }
 
 #classes-nav > li {
@@ -839,7 +861,6 @@ section.footer {
     padding-right: 20px;
     margin: 12px 0;
     font-size: 2.5rem;
-    // font-family: "klavika-web", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .no-ul {
