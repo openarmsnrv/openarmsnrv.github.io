@@ -413,7 +413,7 @@ h1.classes {
 h1.contact {
 	font-family: 'Open Sans', sans-serif;
     text-align: center;
-    color: $orange;
+    color: white;
     font-weight: 800;
     font-size: 32px;
 }
@@ -508,7 +508,7 @@ section.staff {
 }
 
 .open-arms-building {
-	margin-top: -2px;
+	margin-top: -3px;
 }
 
 .resource-label {
@@ -633,6 +633,7 @@ section.classes {
 }
 
 section.contact {
+	background-color: $orange;
 	border-top-width: medium;
 	border-top-color: $orange;
 	border-top-style: solid;
@@ -642,7 +643,22 @@ section.contact {
 	font-size: 20px;
 	text-align: center;
 	.section-title {
-		color: $orange;
+		color: white;
+	}
+}
+
+.content {
+	color: white;
+	text-decoration: none;
+}
+
+.facebook-link:hover {
+	text-decoration: none;
+}
+
+@media (max-width: 480px) {
+	.content {
+		font-size: 14px;
 	}
 }
 
