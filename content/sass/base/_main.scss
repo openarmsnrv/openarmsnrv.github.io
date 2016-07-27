@@ -373,8 +373,14 @@ section.staff {
 	overflow: hidden;
 }
 
+// .class-container {
+// 	margin-bottom: -2px;
+// 	overflow: hidden;
+// }
+
 .staff-container > .section-title,
-.verse-container > .section-title {
+.verse-container > .section-title,
+.class-container > .section-title {
 	position: absolute;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
@@ -402,6 +408,15 @@ section.staff {
 	left: -50%;
 }
 
+.class-label {
+	color: $blue;
+	font-weight: 800;
+	font-size: 3.5em;
+	position: relative;
+	left: -50%;
+	margin-bottom: 1em;
+}
+
 .verse-content {
 	color: $blue;
 	font-weight: 800;
@@ -413,10 +428,8 @@ section.staff {
     padding-right: 15%;
 }
 
-.class-container > .section-title,
 .resource-container > .section-title {
 	position: absolute;
-	bottom: 0;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	font-weight: 800;
@@ -434,12 +447,6 @@ section.staff {
 	font-size: 3.5em;
 	left: 50%;
 	margin: 0;
-}
-
-.class-label {
-	color: $blue;
-	position: relative;
-	left: -50%;
 }
 
 .building-label {
@@ -472,9 +479,15 @@ section.staff {
 	color: white;
     position: relative;
     left: -50%;
-	// margin-top: 8%;
 	padding: 8%;
 	padding-top: 3%;
+}
+
+.container.class {
+	left: -50%;
+	padding: 1.25em;
+	padding-top: 15.4em;
+	position: relative;
 }
 
 .container.staff.top {
@@ -497,24 +510,67 @@ img.staff {
 	width: 100%;
 }
 
+.class-title {
+	font-size: 1.5em; 
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+.class-content-container {
+	color: $blue;
+	margin-bottom: 1em;
+}
+
+.class-subtitle {
+	font-size: .48em;
+}
+
+.class-description {
+	font-size: 1em;
+    font-weight: 500;
+}
+
+.curriculum {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: $blue;
+	padding-top: 2em;
+}
+
+.curriculum > a {
+	color: $blue;
+}
+
+.cloud-top {
+	margin-top: 60px;
+	width: 78%;
+}
+
 @media (max-width: 1280px) {
 	.staff-label {
 		margin-top: -1%;
 	}
-
 	.container.staff {
 		padding-left: 18%;
 	  	padding-right: 18%;
 		padding-top: 1.5%;
   	}
+	.container.class {
+		padding-top: 14%;
+	}
 	.verse-content {
 		font-size: 2em;
 		padding-top: 10%;
 		padding-right: 10%;
 		padding-left: 10%;
 	}
+	.cloud-top {
+		width: 100%;
+	}
+	.curriculum {
+		padding-top: 4%;
+	}
 }
-
  
 @media only screen 
 and (max-device-width : 1024px) {
@@ -527,6 +583,9 @@ and (max-device-width : 1024px) {
 		padding-top: 12%;
 		padding-left: 12%;
 		padding-right: 12%;
+	}
+	.curriculum {
+		padding-top: 1;
 	}
 }
 
@@ -546,6 +605,13 @@ and (max-device-width : 768px)  {
 		padding-left: 12%;
 		padding-right: 12%;
 	}
+	.class-label {
+		margin-bottom: 0;
+	}
+	.cloud-top {
+		width: 150%;
+		margin-left: -25%;
+	}
 }
 
 @media (max-width: 480px) {
@@ -557,7 +623,13 @@ and (max-device-width : 768px)  {
 	  font-size: 12px;
   }
   .class-container > .section-title {
-	  bottom: -20px;
+	  padding-top: 10%;
+	  top: 0;
+  }
+  .class-container {
+	  height: 830px;
+      background-color: white;
+      margin-top: 20%;
   }
   .resource-container > .section-title {
 	  bottom: -30px;
@@ -577,6 +649,12 @@ and (max-device-width : 768px)  {
   .sun {
 	width: 225%;
     margin-left: -62.5%;
+  }
+  .cloud-top {
+	  display: none;
+  }
+  .container.class {
+	  padding-top: 3%;
   }
   .verse-content {
 	  font-size: 1.3em;
@@ -667,6 +745,7 @@ section.classes {
     // background-attachment: fixed;
     // background-position: center center;
 	text-align: center;
+	padding-bottom: 3%;
 }
 
 section.contact {
@@ -837,41 +916,8 @@ section.footer {
 	padding-top: 50px;
 }
 
-.cloud-top {
-	margin-top: 60px;
-	width: 101%;
-	margin-bottom: -1px;
-}
-
 .tree-top {
 	margin-bottom: -2px;
-}
-
-.container.cloud {
-	background-color: white;
-}
-
-.class-title {
-	font-weight: bold;
-	font-size: 25px; 
-	margin-bottom: 10px;
-}
-
-.class-content-container {
-	margin-bottom: 30px;
-}
-
-.class-subtitle {
-	font-size: 14px;
-}
-
-.curriculum {
-	font-weight: bold;
-	color: $blue;
-}
-
-.curriculum > a {
-	color: $blue;
 }
 
 #classes-nav > li {
