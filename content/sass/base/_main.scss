@@ -137,26 +137,6 @@ html {
 	z-index: 200;
 }
 
-// .verse-container {
-// 	position: absolute;
-// 	text-align: center;
-// 	&.first {
-// 		top: 55%;
-//         left: 100px;
-// 	}
-// 	&.second {
-// 		top: 25%;
-//         left: 75px;
-// 	}
-// 	&.third {
-// 		top: 60%;
-// 		left: 30%;
-// 	}
-// }
-
-
-
-
 section.mobile-verse.peace {
 	color: white;
   background-image: url("../../images/peace.jpg");
@@ -373,20 +353,38 @@ section.staff {
 	overflow: hidden;
 }
 
-// .class-container {
-// 	margin-bottom: -2px;
-// 	overflow: hidden;
-// }
+.verse-container {
+	overflow: hidden;
+}
 
-.staff-container > .section-title,
-.verse-container > .section-title,
-.class-container > .section-title {
+.class-container {
+	overflow: hidden;
+}
+
+.staff-container > .section-title{
 	position: absolute;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	left: 50%;
 	top: 23.7%;
 	width: 100%;
+}
+
+.verse-container > .section-title{
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	left: 50%;
+	top: 23.7%;
+	width: 100%;
+}
+
+.class-container > .section-title {
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	left: 50%;
+	top: 23.7%;
 }
 
 .staff-container > .staff-quote {
@@ -587,6 +585,9 @@ and (max-device-width : 1024px) {
 	.curriculum {
 		padding-top: 1;
 	}
+	.container.class {
+		padding-top: 7%;
+	}
 }
 
 @media only screen 
@@ -627,7 +628,7 @@ and (max-device-width : 768px)  {
 	  top: 0;
   }
   .class-container {
-	  height: 830px;
+	  height: 70em;
       background-color: white;
       margin-top: 20%;
   }
