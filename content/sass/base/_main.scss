@@ -501,7 +501,7 @@ section.resources {
 .container.class {
 	left: -50%;
 	padding: 1.25em;
-	padding-top: 15.4em;
+	padding-top: 11.4em;
 	position: relative;
 }
 
@@ -530,6 +530,10 @@ img.staff {
 
 .verse {
 	width: 100%;
+}
+
+.class-img {
+	width: 25%;
 }
 
 .class-title {
@@ -601,7 +605,7 @@ img.staff {
 		padding-top: 1.5%;
   	}
 	.container.class {
-		padding-top: 14%;
+		padding-top: 9%;
 	}
 	.verse-content {
 		font-size: 2em;
@@ -642,7 +646,7 @@ and (max-device-width : 1024px) {
 		padding-top: 1;
 	}
 	.container.class {
-		padding-top: 7%;
+		padding-top: 3%;
 	}
 	.resource-container > .section-title {
 		margin-top: -4%;
@@ -681,6 +685,9 @@ and (max-device-width : 768px)  {
 	.resource-label {
 		padding-top: 50%;
 	}
+	.container.class {
+		padding-top: 0;
+	}
 }
 
 @media (max-width: 480px) {
@@ -696,7 +703,7 @@ and (max-device-width : 768px)  {
 	  top: 0;
   }
   .class-container {
-	  height: 70em;
+	  height: 83em;
       background-color: white;
       margin-top: 20%;
   }
@@ -723,7 +730,7 @@ and (max-device-width : 768px)  {
 	  display: none;
   }
   .container.class {
-	  padding-top: 3%;
+	  padding-top: 0;
   }
   .verse-content {
 	  font-size: 1.3em;
@@ -792,10 +799,7 @@ and (max-device-width : 768px)  {
 .testimonial-content {
 	position: absolute;
 	top: 25%;
-	font-family: HoboWeb;
 	text-align: center;
-	// font-weight: 800;
-	font-size: 32px;
 	left: 50%;
 }
 
@@ -803,7 +807,15 @@ and (max-device-width : 768px)  {
 	color: white;
 	position: relative;
 	left: -50%;
-	font-size: 17px;
+	font-size: 1.2em;
+}
+
+.testimonial-quote.planet-one {
+	font-size: 1.2em;
+}
+
+.testimonial-quote.planet-three {
+	font-size: 1.7em;
 }
 
 .testimonial-parent {
