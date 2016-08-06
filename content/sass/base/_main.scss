@@ -56,7 +56,7 @@ html {
 	text-align: center;
 	margin-bottom: 15px;
 	h1 {
-		font-size: 3.5em;
+		font-size: 3.3em;
 	}
 	a {
 		color: $blue;
@@ -239,7 +239,7 @@ img.icon {
 		text-align: center;
         color: white;
         font-weight: 800;
-        font-size: 3.5em;
+        font-size: 3.3em;
 	}
 }
 
@@ -285,7 +285,7 @@ img.icon {
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	h1 {
-		font-size: 3.5em;
+		font-size: 3.3em;
 	}
 }
 
@@ -418,14 +418,14 @@ section.resources {
 	text-align: center;
 	color: white;
 	font-weight: 800;
-	font-size: 3.5em;
+	font-size: 3.3em;
 	left: 50%;
 }
 
 .staff-label {
 	color: white;
 	font-weight: 800;
-	font-size: 3.5em;
+	font-size: 3.3em;
 	position: relative;
 	left: -50%;
 }
@@ -433,7 +433,7 @@ section.resources {
 .class-label {
 	color: $blue;
 	font-weight: 800;
-	font-size: 3.5em;
+	font-size: 3.3em;
 	position: relative;
 	left: -50%;
 	margin-bottom: 1em;
@@ -442,7 +442,7 @@ section.resources {
 .resource-label {
 	color: white;
 	font-weight: 800;
-	font-size: 3.5em;
+	font-size: 3.3em;
 	position: relative;
 	left: -50%;
 	padding-top: 7%;
@@ -465,7 +465,7 @@ section.resources {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	font-weight: 800;
-	font-size: 3.5em;
+	font-size: 3.3em;
 	left: 50%;
 	margin: 0;
 }
@@ -485,7 +485,7 @@ section.resources {
 	color: white;
 	position: relative;
 	font-family: HoboWeb;
-	font-size: 3.5em;
+	font-size: 3.3em;
 	width: 50%;
 	margin: 0 auto;
 }
@@ -595,6 +595,35 @@ img.staff {
 	font-size: .7em;
 }
 
+.testimonials {
+	padding-top: 100px;
+}
+
+.testimonial-content {
+	position: absolute;
+	top: 25%;
+	text-align: center;
+	left: 50%;
+}
+
+.testimonial-quote {
+	color: white;
+	position: relative;
+	left: -50%;
+}
+
+.testimonial-quote.planet-one {
+	font-size: 1.5em;
+}
+
+.testimonial-quote.planet-two {
+	font-size: 1.4em;
+}
+
+.testimonial-quote.planet-three {
+	font-size: 2em;
+}
+
 @media (max-width: 1280px) {
 	.staff-label {
 		margin-top: -1%;
@@ -628,6 +657,13 @@ img.staff {
 	.container.resource {
 		padding-top: 0;
 	}
+	.testimonial-quote.planet-one,
+	.testimonial-quote.planet-two {
+		font-size: 1.2em;
+	}
+	.testimonial-quote.planet-three {
+		font-size: 1.7em;
+	}
 }
  
 @media only screen 
@@ -650,6 +686,18 @@ and (max-device-width : 1024px) {
 	}
 	.resource-container > .section-title {
 		margin-top: -4%;
+	}
+	.testimonial-content {
+	  top: 20%;
+    }
+	.testimonial-quote.planet-one {
+		font-size: 1.1em;
+	}
+	.testimonial-quote.planet-two {
+		font-size: 1.05em;
+	}
+	.testimonial-quote.planet-three {
+		font-size: 1.5em;
 	}
 }
 
@@ -687,6 +735,15 @@ and (max-device-width : 768px)  {
 	}
 	.container.class {
 		padding-top: 0;
+	}
+	.testimonial-content {
+	  top: 21%;
+    }
+	.testimonial-quote.planet-one,
+	.testimonial-quote.planet-two,
+	.testimonial-quote.planet-three
+	{
+		font-size: 1.7em;
 	}
 }
 
@@ -752,6 +809,17 @@ and (max-device-width : 768px)  {
 	  width: 90%;
       margin-left: 3%;
   }
+  .testimonial-content {
+	  top: 21%;
+  }
+  .testimonial-quote.planet-one,
+  .testimonial-quote.planet-three
+   {
+	  font-size: .85em;
+  }
+  .testimonial-quote.planet-two {
+	  font-size: .95em;
+  }
 }
 
 .mobile-staff > .staff-member {
@@ -792,32 +860,6 @@ and (max-device-width : 768px)  {
     color: $orange;
 }
 
-.testimonials {
-	padding-top: 100px;
-}
-
-.testimonial-content {
-	position: absolute;
-	top: 25%;
-	text-align: center;
-	left: 50%;
-}
-
-.testimonial-quote {
-	color: white;
-	position: relative;
-	left: -50%;
-	font-size: 1.2em;
-}
-
-.testimonial-quote.planet-one {
-	font-size: 1.2em;
-}
-
-.testimonial-quote.planet-three {
-	font-size: 1.7em;
-}
-
 .testimonial-parent {
 	color: $blue;
 	margin-top: 10px;
@@ -849,7 +891,7 @@ section.contact {
 	text-align: center;
 	.section-title {
 		color: white;
-		font-size: 3.5em;
+		font-size: 3.3em;
 		font-weight: 800;
 	}
 }
