@@ -1284,11 +1284,6 @@ $break-xlarge: 1440px;
 		margin-left: -30px;
 		text-align: center;
 
-		@include min-screen($break-large) {
-			display: block;
-			bottom: 0;
-		}
-
 		a {
 			// @include border-radius(50%);
 			// @include opacity(0.3);
@@ -1307,42 +1302,6 @@ $break-xlarge: 1440px;
 		}
 	}
 
-	@include max-screen($break-xsmall) {
-		.lead {
-			font-size: 18px;
-			font-weight: 400;
-		}
-	}
-
-	@include screen($break-xsmall + 1px, $break-small - 1px) {
-		.left {
-			top: 4em;
-		}
-	}
-
-	@include max-screen($break-small) {
-		.hero-heading {
-			font-size: 1.5em;
-		}
-	}
-
-	@include min-screen($break-small) {
-		.left {
-			top: 12em;
-		}
-	}
-
-	@include min-screen($break-medium) {
-		text-align: left;
-
-		.left {
-			top: 10em;
-		}
-	}
-
-	@include min-screen($break-large) {
-		font-size: 2.2em;
-	}
 }
 
 .main-hero-logo {
