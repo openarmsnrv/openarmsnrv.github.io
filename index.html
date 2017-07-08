@@ -255,7 +255,6 @@
 		}
 
 		.grid-unit.staff img {
-			/*border: 5px solid;*/
 			margin-top: 2em;
 		}
 
@@ -449,47 +448,69 @@
 	}
 
 	.welcome {
-		/*font-family: 'Leckerli One', cursive;*/
 		font-family: 'Bowlby One', cursive;		
 		font-size: 4em;
 		display: flex;
 		align-items: flex-end;
-		margin-bottom: 23%;
+		margin-bottom: 45%;
 		align-items: top;
-		/*text-align: left;*/
-		/*justify-content: center;*/
 		height: 100vh;
 	}
 
 	@media(min-width: 800px) {
 			.welcome {
-				font-size: 7em;
-				align-items: flex-start;
+				align-items: center;
 				margin-bottom: 0;
+			}
+
+			.welcome img {
+				width: 40%;
 			}
 	}
 
-	.welcome p {
-		width: 30%;
-		padding-left: 20%;
+	.welcome img {
+		align-items: flex-start;
+		
+		padding-left: 15%;
 		line-height: 1em;
 	}
 
-	/*.testimonials .mission-container {
-			background: url(images/commentbox.svg) no-repeat 70%;
-			background-size: cover;
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-end;
-			height: 120vh;
-	}*/
+	.testimonials {
+			height: 470px;
+	}
+
+	@media(min-width: 800px) {
+		.testimonials {
+			height: 500px;
+		}
+	}
+
+	.w3-animate-fading {
+		animation:fading .5s;
+	}
+	@keyframes fading {
+		0% {
+			opacity: 0;
+		}
+		25% {
+			opacity: .25;
+		}
+		50% {
+			opacity: .5;
+		}
+		75% {
+			opacity: .75;
+		}
+		100% { 
+			opacity: 1;
+			}
+		}
 	</style>
 
 	<body>
-		<!--<blink></blink>-->
 		<div class="container container--home">
 			<div class="welcome">
-				<p>ONE BIG FAMILY</p>
+				<img src="images/ONE_BIG_FAMILY.svg" alt="">
 			</div>
 		</div>
 
@@ -507,11 +528,6 @@
 
 		<div class="main">
 			
-			<!--<div class="double">
-				<img class="grid-unit blocks" style="padding-top: 11%;" src="images/alphablocks.svg" alt="">
-			</div>-->
-			
-			
 			<div class="mission-container">
 				<h3>OUR MISSION</h3>
 				<p>Our program is founded on Christian values and principles and we are committed to meeting the individual needs of your children. Part of our curriculum will be to instill those same values and principles of Christ to your children. We will provide a safe, loving and healthy environment for your children to grow socially, emotionally, physically, and cognitively. Children learn mostly through play and interaction, and that's the motivational factor for the learning that takes place.</p>
@@ -524,9 +540,8 @@
 				<div class="double class-odd">
 					<div class="grid-unit graphic">
 						<img class="class" src="images/infants.png" alt="">
-						
-						<!--<svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><circle cx="300" cy="300" r="300" style="fill:#535251;"/></svg>-->
 					</div>
+
 					<div class="grid-unit">
 						<h3>Infants</h3>
 						<p>Our experienced and nurturing caregivers are ready to lead your child through their first experiences in Christ through play and interaction.</p>
@@ -536,9 +551,8 @@
 				<div class="double class-even">
 					<div class="grid-unit graphic alternate">
 						<img class="class" src="images/toddlers.png" alt="">
-						
-						<!--<svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><circle cx="300" cy="300" r="300" style="fill:#535251;"/></svg>-->
 					</div>
+
 					<div class="grid-unit">
 						<h3>Toddlers</h3>
 						<p>We offer an exciting discovery experience in our toddler class to stimulate early foundations for their spiritual, emotional, and physical development.</p>
@@ -548,9 +562,8 @@
 				<div class="double class-odd">
 					<div class="grid-unit graphic">
 						<img class="class" src="images/twos.png" alt="">
-						
-						<!--<svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><circle cx="300" cy="300" r="300" style="fill:#535251;"/></svg>-->
 					</div>
+
 					<div class="grid-unit">
 						<h3>Twos</h3>
 						<p>Our two year old class begins their journey with Christ with a curriculum specifically tailored to ignite a Christ like and loving spirit to guide your family through their first social milestones.</p>
@@ -560,7 +573,6 @@
 				<div class="double class-even">
 					<div class="grid-unit graphic alternate">
 						<img class="class" src="images/threes_fours.png" alt="">
-						<!--<svg viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><circle cx="300" cy="300" r="300" style="fill:#535251;"/></svg>-->
 					</div>
 					<div class="grid-unit">
 						<h3>Threes and Fours</h3>
@@ -611,7 +623,7 @@
 					<div class="grid-unit staff">
 						<img src="images/katie_1.jpg" alt="">
 						<p>Katie</p>
-						<p>The Class</p>
+						<p>Threes</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/kayla_1.jpg" alt="">
@@ -621,7 +633,7 @@
 					<div class="grid-unit staff">
 						<img src="images/kealee_1.jpg" alt="">
 						<p>Kealee</p>
-						<p>Toddlers</p>
+						<p>Twos</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/lauren_1.jpg" alt="">
@@ -659,19 +671,18 @@
 
 			<div class="testimonials mission-container">
 				<h3>Testimonials</h3>
-				<div class="mission-container">
+				<div class="mission-container testimonial w3-animate-fading">
 					<p>I have been so impressed with the love, care and affection that I have seen displayed at Open Arms. It's such a peaceful feeling knowing that my girls are being taken care of by staff that genuinely cares for them. </p>
 				</div>
 
-				<div class="mission-container">
+				<div class="mission-container testimonial w3-animate-fading">
 					<p>You can feel their love as soon as you walk in the door and all three of my kids LOVE to go to "school" each day. I am so thankful every day that the Lord showed me Open Arms. There is truly no daycare out there as AMAZING as Open Arms!</p>
 				</div>
 
-				<div class="mission-container">
+				<div class="mission-container testimonial w3-animate-fading">
 					<p>I absolutely love this childcare center. It was honestly the answer to my prayers after having to switch daycares. I immediately got the feeling that my son would be happy, loved, and safe here. Trish is an angel and so are the rest of the teachers here. It's truly a little family. My kid has also learned a ton since he started here. They have a great education program as well as a nutrition program. I can't say enough good things about this place.</p>
 				</div>
 			</div>
-			
 
 		</div>
 
@@ -683,7 +694,7 @@
 						<li><a href="https://drive.google.com/file/d/0B8zRqufK_vBXQThVRy1QeXNCd1U/view?usp=sharing" target="_blank" style="target-new: tab;">Parent Handbook</a></li>
 						<li><a href="https://drive.google.com/open?id=0B8zRqufK_vBXRzBDdUt3QVdZaGs" target="_blank" style="target-new: tab;">Registration Application</a></li>
 						<li><a  href="https://drive.google.com/open?id=0B8zRqufK_vBXUGVMSnlYRjhzZm8" target="_blank" style="target-new: tab;">USDA Announcement</a></li>
-						<li><a href="https://drive.google.com/file/d/0B8zRqufK_vBXUjVGbXJCRlJGRVU/view?usp=sharing" target="_blank" style="target-new: tab;">USDA Food Application</a></li>
+						<!--<li><a href="https://drive.google.com/file/d/0B8zRqufK_vBXUjVGbXJCRlJGRVU/view?usp=sharing" target="_blank" style="target-new: tab;">USDA Food Application</a></li>-->
 						<li><a href="https://drive.google.com/file/d/0B8zRqufK_vBXei0yTnZuQlgyWGs/view?usp=sharing" target="_blank" style="target-new: tab;">Employment Application</a></li>
 						<li><a href="https://drive.google.com/open?id=0B8zRqufK_vBXVUtkOWMxZ05pcjg" target="_blank" style="target-new: tab;">Physical Form</a></li>
 						<li><a href="https://drive.google.com/open?id=0B8zRqufK_vBXQ0kyRWlPM3BiSWM" target="_blank" style="target-new: tab;">Photography Form</a></li>
@@ -719,6 +730,27 @@
 			sr.reveal('.class-odd', { reset: false, viewFactor: 0.6, scale: 1, origin: "left" });
 			sr.reveal('.class-even', { reset: false, viewFactor: 0.6, scale: 1, origin: "right" });
 			sr.reveal('.staff', { reset: false, viewFactor: 0.6, scale: 1 });
+
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+					var i;
+					var x = document.getElementsByClassName("testimonial");
+					
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					}
+					
+					myIndex++;
+					
+					if (myIndex > x.length) {
+						myIndex = 1
+					}
+
+					x[myIndex-1].style.display = "block";  
+					setTimeout(carousel, 10000);    
+			}
 		</script>
 	</body>
 </html>
