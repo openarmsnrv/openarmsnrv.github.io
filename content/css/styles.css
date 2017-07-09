@@ -427,9 +427,16 @@
       color:#fff;
       cursor: pointer;
       display:inline-block;
-      height: 13px;
+      height: 30px;
       text-align:center;
-      width: 13px;
+      width: 30px;
+    }
+
+    @media(min-width: 800px) {
+      .slide-bullet {
+        height: 15px;
+        width: 15px;
+      }
     }
 
     .slide-bullet:hover {
