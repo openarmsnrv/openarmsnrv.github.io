@@ -111,11 +111,6 @@
 		}
 
 		@media (min-width: 800px) {
-				/*.double:last-child .graphic {
-						-webkit-box-ordinal-group: 3;
-						-ms-flex-order: 2;
-						order: 2
-				}*/
 				.double:last-child .graphic svg {
 						max-width: 340px
 				}
@@ -177,8 +172,8 @@
 
 		.main {
 			background: #4776E6;  /* fallback for old browsers */
-			background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
-			background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			background-image: url(../../images/flowers.png), -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+			background-image: url(../../images/flowers.png), linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 		}
 
 		.main p {
