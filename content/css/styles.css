@@ -26,6 +26,7 @@
 		}
 
 		body {
+			background-color: #242020;
 			color: #ffffff;		
 			font: 93.8% / 1.5 'Poppins', sans-serif;	
 			height: 100%;
@@ -180,7 +181,6 @@
 		.container--home {
 			background: url(../../images/building-large.jpg) no-repeat 70%;
 			filter: grayscale(65%);
-			background-position-y: -70px;
 			background-size: cover;
 			display: flex;
 			flex-direction: column;
