@@ -19,7 +19,11 @@
 		<script src="javascript/scrollreveal.min.js"></script>
 	</head>
 
-	<body>
+	<body>		
+		<div class="snow">
+			<canvas id="snow"></canvas>
+		</div>
+		
 		<div class="container container--home">
 			<div class="welcome">
 				<img src="images/ONE_BIG_FAMILY.svg" alt="">
@@ -39,6 +43,7 @@
 		
 
 		<div class="main">
+			
 			
 			<div class="mission-container">
 				<h3>OUR MISSION</h3>
@@ -99,87 +104,92 @@
 				<div class="trip">
 					<div class="grid-unit staff">
 						<img src="images/staff/amanda.jpg" alt="">
-						<p>Amanda</p>
+						<p class="name">Amanda</p>
 						<p>Infants</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/staff/caroline.jpg" alt="">
-						<p>Caroline</p>
+						<p class="name">Caroline</p>
 						<p>Fours</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/staff/carrie.jpg" alt="">
-						<p>Carrie</p>
+						<p class="name">Carrie</p>
 						<p>Infants</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/staff/carrieb.jpg" alt="">
-						<p>Carrie</p>
+						<p class="name">Carrie</p>
 						<p>Toddlers</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/staff/casey.jpg" alt="">
-						<p>Casey</p>
+						<p class="name">Casey</p>
 						<p>Twos</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/staff/casey2.jpg" alt="">
-						<p>Casey</p>
+						<p class="name">Casey</p>
 						<p>Infants</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/staff/courtney.jpg" alt="">
-						<p>Courtney</p>
+						<p class="name">Courtney</p>
 						<p>Toddlers</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/staff/emily.jpg" alt="">
-						<p>Emily</p>
+						<p class="name">Emily</p>
 						<p>Toddlers</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/staff/kayla.jpg" alt="">
-						<p>Kayla</p>
-						<p>Infants</p>
+						<p class="name">Kayla</p>
+						<p>Twos</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/staff/kealee.jpg" alt="">
-						<p>Kealee</p>
+						<p class="name">Kealee</p>
 						<p>Twos</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/staff/lauren.jpg" alt="">
-						<p>Lauren</p>
-						<p>Twos</p>
+						<p class="name">Lauren</p>
+						<p>Threes</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/staff/leah.jpg" alt="">
-						<p>Leah</p>
+						<p class="name">Leah</p>
 						<p>Toddlers</p>
 					</div>
 					<div class="grid-unit staff">
+							<img src="images/staff/lindsey.jpg" alt="">
+							<p class="name">Lindsey</p>
+							<p>Threes</p>
+						</div>
+					<div class="grid-unit staff">
 						<img src="images/staff/melanie.jpg" alt="">
-						<p>Melanie</p>
+						<p class="name">Melanie</p>
 						<p>Fours</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/staff/rebekah.jpg" alt="">
-						<p>Rebekah</p>
-						<p>Threes</p>
+						<p class="name">Rebekah</p>
+						<p>Toddlers</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/staff/sandra.jpg" alt="">
-						<p>Sandra</p>
+						<p class="name">Sandra</p>
 						<p>Cook</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/staff/taylor.jpg" alt="">
-						<p>Taylor</p>
-						<p>Threes</p>
+						<p class="name">Taylor</p>
+						<p>Twos</p>
 					</div>
 					<div class="grid-unit staff">
 						<img src="images/staff/trish.jpg" alt="">
-						<p>Trish</p>
+						<p class="name">Trish</p>
 						<p>Owner</p>
 					</div>
 				</div>
@@ -207,8 +217,7 @@
 			</div>
 			
 
-		</div>
-
+		</div>		
 		<footer>
 			<div class="trip resources">
 				<div class="grid-unit resources">
@@ -245,7 +254,7 @@
 				
 				<p><svg class="icon" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path d="M15.909,0c-8.772,0 -15.909,7.137 -15.909,15.909c0,8.772 7.137,15.909 15.909,15.909c8.772,0 15.909,-7.137 15.909,-15.909c0,-8.772 -7.137,-15.909 -15.909,-15.909Zm-5.849,21.759c3.225,3.225 8.473,3.225 11.699,0c0.249,-0.249 0.651,-0.249 0.9,0c0.249,0.248 0.249,0.651 0,0.899c-1.861,1.861 -4.306,2.792 -6.75,2.792c-2.444,0 -4.888,-0.931 -6.749,-2.792c-1.803,-1.802 -2.796,-4.199 -2.796,-6.749c0,-2.55 0.992,-4.947 2.796,-6.75c1.803,-1.802 4.2,-2.795 6.749,-2.795c2.55,0 4.947,0.993 6.749,2.796c0.249,0.249 0.249,0.651 0,0.9c-0.248,0.248 -0.651,0.248 -0.899,0c-1.563,-1.563 -3.64,-2.424 -5.85,-2.424c-2.209,0 -4.287,0.861 -5.849,2.424c-1.563,1.562 -2.424,3.64 -2.424,5.849c0,2.21 0.861,4.287 2.424,5.85Z" style="fill:#fff;"/></svg> 2017 Open Arms Inc. All rights reserved.</p>
 			</div>
-		</footer>
+		</footer>		
 
 		<script>
 			window.sr = ScrollReveal();
@@ -292,6 +301,68 @@
 
 			ga('create', 'UA-102292657-1', 'auto');
 			ga('send', 'pageview');
+
+
+			// https://codepen.io/otsukatomoya/pen/gbDxF/
+
+var w = window.outerWidth,
+h = window.outerHeight,
+canvas = document.getElementById('snow'),
+ctx = canvas.getContext('2d'),
+rate = 50,
+arc = 500,
+time,
+count,
+size = 2,
+speed = 10,
+lights = new Array,
+colors = ['#eee'];
+
+canvas.setAttribute('width',w);
+canvas.setAttribute('height',h);
+
+function init() {
+time = 0;
+count = 0;
+
+for(var i = 0; i < arc; i++) {
+lights[i] = {
+	x: Math.ceil(Math.random() * w),
+	y: Math.ceil(Math.random() * h),
+	toX: Math.random() * 5 + 1,
+	toY: Math.random() * 5 + 1,
+	c: colors[Math.floor(Math.random()*colors.length)],
+	size: Math.random() * size
+}
+}
+}
+
+function bubble() {
+ctx.clearRect(0,0,w,h);
+
+for(var i = 0; i < arc; i++) {
+var li = lights[i];
+
+ctx.beginPath();
+ctx.arc(li.x,li.y,li.size,0,Math.PI*2,false);
+ctx.fillStyle = li.c;
+ctx.fill();
+
+li.x = li.x + li.toX * (time * 0.05);
+li.y = li.y + li.toY * (time * 0.05);
+
+if(li.x > w) { li.x = 0; }
+if(li.y > h) { li.y = 0; }
+if(li.x < 0) { li.x = w; }
+if(li.y < 0) { li.y = h; }
+}
+if(time < speed) {
+time++;
+}
+timerID = setTimeout(bubble,1000/rate);
+}
+init();
+bubble();
 
 		</script>
 	</body>
