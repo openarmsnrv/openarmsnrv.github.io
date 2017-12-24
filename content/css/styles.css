@@ -179,7 +179,7 @@
 		}
 
 		.container--home {
-			background: url(../../images/building-large.jpg) no-repeat 70%;
+			background: url(../../images/building-large.jpg) no-repeat 63%;
 			filter: grayscale(65%);
 			background-size: cover;
 			display: flex;
@@ -361,9 +361,7 @@
 		align-items: flex-start;
 		padding-left: 15%;
 		line-height: 1em;
-    margin-bottom: 75%;
     width: 80%;
-    display: none;
 	}
 
   @media(min-width: 400px) {
@@ -408,7 +406,9 @@
 
    @media(max-height: 375px) {
     .welcome img {
-      display: none;
+      margin-bottom: -30%;
+			width: 40%;			
+      /* display: none; */
     }
   }
 
