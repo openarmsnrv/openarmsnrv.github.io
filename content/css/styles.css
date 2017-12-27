@@ -167,10 +167,12 @@
 			background: url(../../images/building-large.jpg) no-repeat 63%;
 			filter: grayscale(65%);
 			background-size: cover;
+			background-position-y: -90px;
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-end;
 			height: 120vh;
+			background-color: #535251;			
 		}
 
 		@media (min-width: 500px) and (min-height: 800px) {
@@ -337,25 +339,32 @@
 		font-size: 4em;
 		display: flex;
 		align-items: flex-end;
+		justify-content: center;
 		margin-bottom: 45%;
-		align-items: top;
+		/* align-items: top; */
 		height: 100vh;
 	}
 
 	.welcome img {
-		align-items: flex-start;
-		padding-left: 15%;
+		/* align-items: flex-start; */
 		line-height: 1em;
     width: 80%;
 	}
 
   @media(min-width: 400px) {
+		.welcome {
+			margin-bottom: -20%;
+		}
     .welcome img {
       margin-bottom: 60%;
     }
   }
 
    @media(min-width: 500px) {
+		.welcome {
+			justify-content: flex-start;
+			margin-left: 15%;	
+		}
     .welcome img {
       display: block;
       margin-bottom: 30%;
