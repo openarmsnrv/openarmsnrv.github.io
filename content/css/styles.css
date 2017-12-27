@@ -2,21 +2,6 @@
 		@import url('https://fonts.googleapis.com/css?family=Bowlby+One|Poppins:400,700');
 		@import url('https://fonts.googleapis.com/css?family=Leckerli+One');
 
-		/* html,
-		body {
-				background-color: #242020;
-				margin: 0;
-				width: 100%;
-				min-height: 100%;
-				position: relative;
-		}
-
-		body {
-				color: #ffffff;
-				font: 93.8% / 1.5 'Poppins', sans-serif;
-				text-align: center;
-		} */
-
 		html {
 			background-color: #242020;
 			margin: 0;
@@ -182,10 +167,12 @@
 			background: url(../../images/building-large.jpg) no-repeat 63%;
 			filter: grayscale(65%);
 			background-size: cover;
+			background-position-y: -90px;
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-end;
 			height: 120vh;
+			background-color: #535251;			
 		}
 
 		@media (min-width: 500px) and (min-height: 800px) {
