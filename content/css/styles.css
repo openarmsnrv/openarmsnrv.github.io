@@ -342,7 +342,7 @@
 		justify-content: center;
 		margin-bottom: 45%;
 		/* align-items: top; */
-		height: 100vh;
+		height: 100%;
 	}
 
 	.welcome img {
@@ -361,6 +361,9 @@
   }
 
    @media(min-width: 500px) {
+		.container--home {
+			background-position-y: -50px;
+		}
 		.welcome {
 			justify-content: flex-start;
 			margin-left: 15%;	
@@ -369,9 +372,21 @@
       display: block;
       margin-bottom: 30%;
     }
-  }
+	}
+	
+	@media (max-height: 320px), (min-width: 500px) {
+		.welcome {
+			margin-bottom: 40%;
+		}
+	}
 
   @media(min-width: 600px) {
+		.container--home {
+			background-position-y: -50px;
+		}
+		.welcome {
+			margin-bottom: 40%;
+		}
     .welcome img {
       display: block;
       margin-bottom: 10%;
@@ -379,9 +394,13 @@
   }
 
   @media(min-width: 700px) {
+		.welcome {
+			margin-bottom: 15%;
+		}
     .welcome img {
       display: block;
-      margin-bottom: 0%;
+			margin-bottom: 0%;
+			width: 40%;
     }
   }
 
