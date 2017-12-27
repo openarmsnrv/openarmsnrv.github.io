@@ -207,15 +207,9 @@
 				</div>
 
 				<div class="mission-container testimonial w3-animate-fading">
-					<p>I absolutely love this childcare center. It was honestly the answer to my prayers after having to switch daycares. I immediately got the feeling that my son would be happy, loved, and safe here. Trish is an angel and so are the rest of the teachers here. It's truly a little family. My kid has also learned a ton since he started here. They have a great education program as well as a nutrition program. I can't say enough good things about this place.</p>
+					<p>I immediately got the feeling that my son would be happy, loved, and safe here. Trish is an angel and so are the rest of the teachers here. It's truly a little family. My kid has also learned a ton since he started here. They have a great education program as well as a nutrition program. I can't say enough good things about this place.</p>
 				</div>
 			</div>
-			<div class="bullets">
-				<span class="slide-bullet" onclick="currentSlide(1)"></span>
-				<span class="slide-bullet" onclick="currentSlide(2)"></span>
-				<span class="slide-bullet" onclick="currentSlide(3)"></span>
-			</div>
-			
 
 		</div>		
 		<footer>
@@ -275,14 +269,12 @@
 				var dots = document.getElementsByClassName("slide-bullet");
 				if (n > x.length) {slideIndex = 1}    
 				if (n < 1) {slideIndex = x.length}
+				
 				for (i = 0; i < x.length; i++) {
 					x[i].style.display = "none";  
 				}
-				for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" active-slide-bullet", "");
-				}
+
 				x[slideIndex-1].style.display = "block";  
-				dots[slideIndex-1].className += " active-slide-bullet";
 			}
 
 			carousel();
