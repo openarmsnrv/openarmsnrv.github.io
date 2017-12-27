@@ -167,12 +167,10 @@
 			background: url(../../images/building-large.jpg) no-repeat 63%;
 			filter: grayscale(65%);
 			background-size: cover;
-			background-position-y: -90px;
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-end;
 			height: 120vh;
-			background-color: #535251;			
 		}
 
 		@media (min-width: 500px) and (min-height: 800px) {
