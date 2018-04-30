@@ -165,7 +165,7 @@
 
 		.container--home {
 			background: url(../../images/building-large.jpg) no-repeat 63%;
-			filter: grayscale(65%);
+			/* filter: grayscale(65%); */
 			background-size: cover;
 			background-position-y: -90px;
 			display: flex;
